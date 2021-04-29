@@ -29,6 +29,9 @@ sembrano fare la cosa giusta
 
 ### importnte: tutti i printout che mettiamo facciamoli iniziare con TB_
 
+print si puo' usare nell'inizializzazione
+invece nel testo conviene fare logging.info("TB_ Setting poll interval to %s seconds", pollInterval)
+
 
 - primo test: alla prima sottomissione con arch ppc federica ha ottenuto 
 
@@ -41,7 +44,10 @@ It's definition is:
 - provo a farmele stampare alla creazione
 -  per cercare tutte le cose che stampiamo, dovrebbe essere ok
 
-grep TB_ /data/srv/wmagent/v1.4.5.patch2/install/wmagent/*/*Log
+grep TB_ /data/srv/wmagent/v1.4.5.patch2/install/wmagent/*/*Log 
+per esempio funziona con on logging.info("TB_ Setting poll interval to %s seconds", pollInterval) in JocCreator:
+
+/data/srv/wmagent/v1.4.5.patch2/install/wmagent/JobCreator/ComponentLog:2021-04-29 16:18:12,787:140674610206528:INFO:JobCreator:TB_ Setting poll interval to 120 seconds
 
 
 
