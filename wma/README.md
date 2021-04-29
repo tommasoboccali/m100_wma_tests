@@ -39,7 +39,10 @@ It's definition is:
 
 - navigando vedo che questo architectures() viene da TagCollector() --> lib/python2.7/site-packages/WMCore/Services/TagCollector/TagCollector.py
 - provo a farmele stampare alla creazione
-- 
+-  per cercare tutte le cose che stampiamo, dovrebbe essere ok
+
+grep TB_ /data/srv/wmagent/v1.4.5.patch2/install/wmagent/*/*Log
+
 
 
 
