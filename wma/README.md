@@ -1,7 +1,7 @@
 - macchina con agent: vocms0263
 - diventare cmst1: sudo -u cmst1 bash
 - agentenv pare sistemare le cose
-- poi vedo cose tipo
+- poi vedo cose tipo nella history
 
 $manage start-agent
 $manage db-prompt wmagent
@@ -18,4 +18,25 @@ $manage help
 WMAgent with Rucio enabled: true
 Documentation for this script can be found at: https://svnweb.cern.ch/trac/CMSDMWM/wiki/WMAgentManagement
 
-ma quel link non esiste
+ma quel link non esiste. Direi che la tabella qui https://twiki.cern.ch/twiki/bin/view/CMSPublic/CompOpsWorkflowOperationsWMAgentToolkit abbia senso
+
+in particolare
+
+$manage stop-agent
+$manage start-agent
+
+sembrano fare la cosa giusta
+
+- primo test: alla prima sottomissione con arch ppc federica ha ottenuto 
+
+Message: Argument 'ScramArch' with value [u'slc7_ppc64le_gcc700'], doesn't pass the validate function.
+It's definition is:
+                     "ScramArch": {"validate": lambda x: all([y in architectures() for y in x]),
+                                   "optional": False, "type": makeNonEmptyList},
+
+- navigando vedo che questo architectures() viene da TagCollector() --> lib/python2.7/site-packages/WMCore/Services/TagCollector/TagCollector.py
+- provo a farmele stampare alla creazione
+- 
+
+
+
