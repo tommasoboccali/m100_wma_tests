@@ -27,6 +27,9 @@ $manage start-agent
 
 sembrano fare la cosa giusta
 
+### importnte: tutti i printout che mettiamo facciamoli iniziare con TB_
+
+
 - primo test: alla prima sottomissione con arch ppc federica ha ottenuto 
 
 Message: Argument 'ScramArch' with value [u'slc7_ppc64le_gcc700'], doesn't pass the validate function.
