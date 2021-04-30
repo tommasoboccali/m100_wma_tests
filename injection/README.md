@@ -19,3 +19,8 @@ per preparare area:
         
         
 - io ho un errore su "import future", che risolvo facendo cmsenv
+
+
+links per monitoring:
+- https://cmsweb-testbed.cern.ch/wmstats/index.html (metti Marconi nel primo campo per trovarli)
+- roba tipo https://cmsweb-testbed.cern.ch/reqmgr2/fetch?rid=tboccali_TC_SLC7_Marconi_TB_CMS_Marconi_210430_091349_3205 per vedere il WF e i config
