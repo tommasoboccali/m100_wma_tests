@@ -29,3 +29,11 @@ per preparare area:
 links per monitoring:
 - https://cmsweb-testbed.cern.ch/wmstats/index.html (metti Marconi nel primo campo per trovarli)
 - roba tipo https://cmsweb-testbed.cern.ch/reqmgr2/fetch?rid=tboccali_TC_SLC7_Marconi_TB_CMS_Marconi_210430_091349_3205 per vedere il WF e i config
+
+
+
+problema attuale: i classad, anceh se sottomesso con slc7_ppc64le .... contiene
+
+Requirements = (TARGET.Arch == "X86_64") && (TARGET.OpSys == "LINUX") && (TARGET.Disk >= RequestDisk) && (TARGET.Memory >= RequestMemory) && (TARGET.Cpus >= RequestCpus) && (TARGET.HasFileTransfer)
+
+
