@@ -10,3 +10,4 @@ Structure:
 - injection: injection scripts and instructions
 - pilot: manual glide in configurations and instruction
 - wma: wma debug 
+- lib/python2.7/site-packages: e' una copia del WMCore che lo stript di inject crea automaticamente ... creato per tenere conto delle modifiche lato WMA rispetto all'install che ci e' stato dato

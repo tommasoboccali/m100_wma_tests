@@ -4,10 +4,18 @@ cd m100_wma_tests/injection/
 cd /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_11_1_0_pre1
 cmsenv
 cd -
-python inject-test-wfs.py -u "https://cmsweb-testbed.cern.ch" -m DMWM -f TC_SLC7_Marconi.json -c TB_CMS_Marconi -r FF_CMS_Marconi -t testbed-vocms0263 -a DMWM_Test -p CMS_Marconi_TBv20210429_test -s "T3_IT_Opportunistic_dodas"
+python inject-test-wfs.py -u "https://cmsweb-testbed.cern.ch" -m DMWM -f TC_SLC7_Marconi.json -c TB_CMS_Marconi -r TB_CMS_Marconi -t testbed-vocms0263 -a DMWM_Test -p CMS_Marconi_TBv20210429_test -s "T3_IT_Opportunistic_dodas"
 
 
 
 per preparare area:
 - prendere https://raw.githubusercontent.com/dmwm/WMCore/master/test/data/ReqMgr/inject-test-wfs.py
-- create un json template e copiarlo in WMCore/test/data/ReqMgr/requests/DMWM/  (WMCore viene creata dal primo run del python sopra, che fallira')
+- create un json template e copiarlo in WMCore/test/data/ReqMgr/requests/DMWM/  (WMCore viene creata dal primo run del python sopra, che fallira') (o linkarlo)
+- la parte che conta per l'architettura e' 
+
+"ScramArch": [
+            "slc7_ppc64le_gcc700"
+        ],
+        
+        
+- io ho un errore su "import future", che risolvo facendo cmsenv
