@@ -19,7 +19,7 @@
     },
     "createRequest": {
         "AcquisitionEra": "DEFAULT_AcqEra",
-        "CMSSWVersion": "CMSSW_11_0_0_pre1",
+        "CMSSWVersion": "CMSSW_11_1_0",
         "Campaign": "Campaign-OVERRIDE-ME",
         "Comments": "SLC7 single task from scratch; 4GB/1CPU at top level, but 2GB/8CPU at task level; harvesting enabled butno DQM output",
         "ConfigCacheUrl": "https://cmsweb.cern.ch/couchdb",
@@ -39,7 +39,7 @@
         "RequestString": "RequestString-OVERRIDE-ME",
         "RequestType": "TaskChain",
         "ScramArch": [
-            "slc7_ppc64le_gcc700"
+            "slc7_ppc64le_gcc820"
         ],
         "SizePerEvent": 1234,
         "SubRequestType": "RelVal",
