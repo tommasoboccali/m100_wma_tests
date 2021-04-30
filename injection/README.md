@@ -11,3 +11,11 @@ python inject-test-wfs.py -u "https://cmsweb-testbed.cern.ch" -m DMWM -f TC_SLC7
 per preparare area:
 - prendere https://raw.githubusercontent.com/dmwm/WMCore/master/test/data/ReqMgr/inject-test-wfs.py
 - create un json template e copiarlo in WMCore/test/data/ReqMgr/requests/DMWM/  (WMCore viene creata dal primo run del python sopra, che fallira') (o linkarlo)
+- la parte che conta per l'architettura e' 
+
+"ScramArch": [
+            "slc7_ppc64le_gcc700"
+        ],
+        
+        
+- io ho un errore su "import future", che risolvo facendo cmsenv
