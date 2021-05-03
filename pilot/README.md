@@ -33,7 +33,7 @@ cd /m100_work/INF21_lhc_0/IMAGES
 
 module load singularity
 
-singularity pull --force docker://tommasoboccali/cc7_ppc64le_gfal:0.3
+== singularity pull --force docker://tommasoboccali/cc7_ppc64le_gfal:0.3
 
 Dovrebbe creare il file cc7_ppc64le_gfal_0.3.sif
 
