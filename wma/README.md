@@ -51,4 +51,13 @@ per esempio funziona con on logging.info("TB_ Setting poll interval to %s second
 
 
 
+### come fermare / cancellare / editare jobs
+
+- cambio ARCH
+- condor_qedit  2765.10  Requirements '(TARGET.Arch == "ppc64le") && (TARGET.OpSys == "LINUX") && (TARGET.Disk >= RequestDisk) && (TARGET.Memory >= RequestMemory) && ((TARGET.FileSystemDomain == MY.FileSystemDomain) || (TARGET.HasFileTransfer))'
+- sospendo tutto
+- condor_suspend cmst1
+- cancello tutto
+- condorq | awk '{print $1}' | xargs condor_rm
+
 
