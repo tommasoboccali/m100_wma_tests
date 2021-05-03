@@ -33,7 +33,7 @@ cd /m100_work/INF21_lhc_0/IMAGES
 
 module load singularity
 
-== singularity pull --force docker://tommasoboccali/cc7_ppc64le_gfal:0.3
+singularity pull --force docker://tommasoboccali/cc7_ppc64le_gfal:0.3
 
 Dovrebbe creare il file cc7_ppc64le_gfal_0.3.sif
 
@@ -41,7 +41,7 @@ Dovrebbe creare il file cc7_ppc64le_gfal_0.3.sif
 
 andare sul nodo batch
 
-srun -v -p m100_usr_prod  -t 400  --gres=gpu:1  --cpus-per-task=16  --pty /bin/bash
+# srun -v -p m100_usr_prod  -t 400  --gres=gpu:1  --cpus-per-task=16  --pty /bin/bash
 
 cd /m100_work/INF21_lhc_0/IMAGES
 
