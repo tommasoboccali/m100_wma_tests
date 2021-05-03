@@ -77,4 +77,4 @@ uri       : voms2.cern.ch:15002
 chmod +x glidein_startup_wrapper
 chmod +x glidein_startup.sh
 
-
+./glidein_startup_wrapper
