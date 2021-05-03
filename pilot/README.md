@@ -41,30 +41,31 @@ Dovrebbe creare il file cc7_ppc64le_gfal_0.3.sif
 
 andare sul nodo batch
 
-# srun -v -p m100_usr_prod  -t 400  --gres=gpu:1  --cpus-per-task=16  --pty /bin/bash
+## srun -v -p m100_usr_prod  -t 400  --gres=gpu:1  --cpus-per-task=16  --pty /bin/bash
 
-cd /m100_work/INF21_lhc_0/IMAGES
+## cd /m100_work/INF21_lhc_0/IMAGES
 
-module load singularity
+## module load singularity
 
-singularity run -B /m100_work -B /cvmfs -B /m100_work/INF21_lhc_0/CMS/SITECONF:/marconi_work/Pra18_4658/cms/SITECONF cc7_ppc64le_gfal_0.3.sif bash
+## singularity run -B /m100_work -B /cvmfs -B /m100_work/INF21_lhc_0/CMS/SITECONF:/marconi_work/Pra18_4658/cms/SITECONF cc7_ppc64le_gfal_0.3.sif bash
 
-export X509_CERT_DIR=/cvmfs/grid.cern.ch/etc/grid-security/certificates/
+## export X509_CERT_DIR=/cvmfs/grid.cern.ch/etc/grid-security/certificates/
 
-export X509_VOMSES=/cvmfs/grid.cern.ch/etc/grid-security/vomses
+## export X509_VOMSES=/cvmfs/grid.cern.ch/etc/grid-security/vomses
 
-export VOMS_USERCONF=/cvmfs/grid.cern.ch/etc/grid-security/vomses
+## export VOMS_USERCONF=/cvmfs/grid.cern.ch/etc/grid-security/vomses
 
-cd /m100_work/INF21_lhc_0/TESTS_WMA/m100_wma_tests/pilot
+## cd /m100_work/INF21_lhc_0/TESTS_WMA/m100_wma_tests/pilot
 
-export X509_USER_PROXY=/m100_work/INF21_lhc_0/TESTS_WMA/m100_wma_tests/pilot/cert.pilot
+## export X509_USER_PROXY=/m100_work/INF21_lhc_0/TESTS_WMA/m100_wma_tests/pilot/cert.pilot
 
 (NOTA DEVI METTERE /m100_work/INF21_lhc_0/TESTS_WMA/m100_wma_tests/pilot/cert.pilot copiando un proxy la lxplus  NOTA EVE ESSRE LUNGO!!! creato con 
 voms-proxy-init -voms cms -valid 192:0
 )
 
 
-voms-proxy-info -all DEVE FUNZIONARE 
+## voms-proxy-info -all 
+DEVE FUNZIONARE 
 
 cioe'     ( 
 Singularity> voms-proxy-info -all
@@ -86,8 +87,8 @@ timeleft  : 11:42:35
 uri       : voms2.cern.ch:15002
 )
 
-chmod +x glidein_startup_wrapper
+## chmod +x glidein_startup_wrapper
 
-chmod +x glidein_startup.sh
+## chmod +x glidein_startup.sh
 
-./glidein_startup_wrapper
+## ./glidein_startup_wrapper
