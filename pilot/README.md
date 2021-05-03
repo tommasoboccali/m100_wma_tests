@@ -50,9 +50,13 @@ module load singularity
 singularity run -B /m100_work -B /cvmfs -B /m100_work/INF21_lhc_0/CMS/SITECONF:/marconi_work/Pra18_4658/cms/SITECONF cc7_ppc64le_gfal_0.3.sif bash
 
 export X509_CERT_DIR=/cvmfs/grid.cern.ch/etc/grid-security/certificates/
+
 export X509_VOMSES=/cvmfs/grid.cern.ch/etc/grid-security/vomses
+
 export VOMS_USERCONF=/cvmfs/grid.cern.ch/etc/grid-security/vomses
+
 cd /m100_work/INF21_lhc_0/TESTS_WMA/m100_wma_tests/pilot
+
 export X509_USER_PROXY=/m100_work/INF21_lhc_0/TESTS_WMA/m100_wma_tests/pilot/cert.pilot
 
 (NOTA DEVI METTERE /m100_work/INF21_lhc_0/TESTS_WMA/m100_wma_tests/pilot/cert.pilot copiando un proxy la lxplus  NOTA EVE ESSRE LUNGO!!! creato con 
