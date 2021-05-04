@@ -121,7 +121,7 @@ dalla dir da cui si fa partire il glidein a mano
 
 ### mkdir GWMS_DIR
 ### mkdir GWMS_DIR/bin
-###GWMS_DIR=`pwd`/GWMS_DIR
+### GWMS_DIR=`pwd`/GWMS_DIR
  
  e poi
  
