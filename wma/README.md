@@ -3,10 +3,10 @@
 - agentenv pare sistemare le cose
 - poi vedo cose tipo nella history
 
-$manage start-agent
-$manage db-prompt wmagent
-$manage stop-agent
-$manage start-agent
+/data/srv/wmagent/v1.4.5.patch2/install/wmagent/*/*Log$manage start-agent
+/data/srv/wmagent/v1.4.5.patch2/install/wmagent/*/*Log$manage db-prompt wmagent
+/data/srv/wmagent/v1.4.5.patch2/install/wmagent/*/*Log$manage stop-agent
+/data/srv/wmagent/v1.4.5.patch2/install/wmagent/*/*Log$manage start-agent
 $manage stop-agent
 $manage stop-services
 $manage execute-agent wmagent-unregister-wmstats `hostname -f`
