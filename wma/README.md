@@ -27,7 +27,7 @@ in particolare
 
 sembrano fare la cosa giusta
 
-### importnte: tutti i printout che mettiamo facciamoli iniziare con TB_
+importnte: tutti i printout che mettiamo facciamoli iniziare con TB_
 
 print si puo' usare nell'inizializzazione
 invece nel testo conviene fare logging.info("TB_ Setting poll interval to %s seconds", pollInterval)
