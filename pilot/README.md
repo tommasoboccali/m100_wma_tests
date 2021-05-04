@@ -92,3 +92,37 @@ uri       : voms2.cern.ch:15002
 ## chmod +x glidein_startup.sh
 
 ## ./glidein_startup_wrapper
+
+
+
+# WORKING
+
+servono un po' di cose per risolvere i 2 problemi:
+
+1 - il python: modificare 
+./v1.4.5.patch2/sw/slc7_amd64_gcc630/cms/wmagent/1.4.5.patch2/etc/submit.sh
+mettendo dentro
+
+...
+source "$compPythonPath/py2-future/$PY_FUTURE_VERSION/$suffix"
+myarch=`uname -m`
+if [ "$myarch" == "ppc64le" ]
+then
+  echo TOMMASO SETTING PYTHON FOR PPC
+  pythonCommand=/usr/bin/python
+fi
+command -v $pythonCommand > /dev/null
+...
+
+in questo modo il condor_exec.exe sara' corretto
+
+2 - sistemare il GWMS_DIR:
+dalla dir da cui si fa partire il glidein a mano
+
+mkdir GWMS_DIR
+mkdir GWMS_DIR/bin
+GWMS_DIR=`pwd`/GWMS_DIR
+ 
+ e poi
+ 
+ ./glidein_startup_wrapper
