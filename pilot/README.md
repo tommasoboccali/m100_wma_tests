@@ -119,10 +119,10 @@ in questo modo il condor_exec.exe sara' corretto
 2 - sistemare il GWMS_DIR:
 dalla dir da cui si fa partire il glidein a mano
 
-mkdir GWMS_DIR
-mkdir GWMS_DIR/bin
-GWMS_DIR=`pwd`/GWMS_DIR
+### mkdir GWMS_DIR
+### mkdir GWMS_DIR/bin
+###GWMS_DIR=`pwd`/GWMS_DIR
  
  e poi
  
- ./glidein_startup_wrapper
+ ### ./glidein_startup_wrapper
