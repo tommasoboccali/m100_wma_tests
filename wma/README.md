@@ -33,6 +33,13 @@ print si puo' usare nell'inizializzazione
 invece nel testo conviene fare logging.info("TB_ Setting poll interval to %s seconds", pollInterval)
 
 
+
+camniatom
+
+./wmagent/v1.4.5.patch2/sw/slc7_amd64_gcc630/cms/wmagent/1.4.5.patch2/etc/submit.sh
+
+con un iff per ppc
+
 - primo test: alla prima sottomissione con arch ppc federica ha ottenuto 
 
 Message: Argument 'ScramArch' with value [u'slc7_ppc64le_gcc700'], doesn't pass the validate function.
