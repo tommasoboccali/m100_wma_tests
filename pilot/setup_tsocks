@@ -3,7 +3,7 @@
 == export LD_PRELOAD=`pwd`/libtsocks.so
 == ssh -vvv -D 1087 -o TCPKeepAlive=yes -o ServerAliveInterval=60 tboccali@lxplus.cern.ch
 
-poi mettere in bkg (se la porta e' diversa editare ~/.tsicks.conf
+poi mettere in bkg (se la porta e' diversa editare ~/.tsocks.conf
 
 == module load singularity
 == cd /m100_work/INF21_lhc_0/IMAGES
