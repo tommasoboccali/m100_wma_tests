@@ -1,25 +1,25 @@
-== srun -v -A INF21_lhc_0 -p m100_usr_prod  -t 1000  --gres=gpu:0  --cpus-per-task=128  --pty /bin/bash
-== cd $WORK/tsocks-1.8beta5+ds1/
-== export LD_PRELOAD=`pwd`/libtsocks.so
-== ssh -vvv -D 1087 -o TCPKeepAlive=yes -o ServerAliveInterval=60 tboccali@lxplus.cern.ch
+ srun -v -A INF21_lhc_0 -p m100_usr_prod  -t 1000  --gres=gpu:0  --cpus-per-task=128  --pty /bin/bash
+ cd $WORK/tsocks-1.8beta5+ds1/
+ export LD_PRELOAD=`pwd`/libtsocks.so
+ ssh -vvv -D 1087 -o TCPKeepAlive=yes -o ServerAliveInterval=60 tboccali@lxplus.cern.ch
 
 poi mettere in bkg (se la porta e' diversa editare ~/.tsocks.conf
 
-== module load singularity
-== cd /m100_work/INF21_lhc_0/IMAGES
-== LD_PRELOAD=$WORK/tsocks-1.8beta5+ds1/libtsocks.so  singularity run -B /m100_work -B /cvmfs -B /m100_work/INF21_lhc_0/CMS/SITECONF:/marconi_work/Pra18_4658/cms/SITECONF cc7_ppc64le_gfal_0.3.sif bash
-== export X509_CERT_DIR=/cvmfs/grid.cern.ch/etc/grid-security/certificates/
-== export X509_VOMSES=/cvmfs/grid.cern.ch/etc/grid-security/vomses
-== export VOMS_USERCONF=/cvmfs/grid.cern.ch/etc/grid-security/vomses
-== cd /m100_work/INF21_lhc_0/TESTS_WMA/m100_wma_tests/pilot
-== export X509_USER_PROXY=/m100_work/INF21_lhc_0/TESTS_WMA/m100_wma_tests/pilot/cert.pilot
-== voms-proxy-info -all
+ module load singularity
+ cd /m100_work/INF21_lhc_0/IMAGES
+ LD_PRELOAD=$WORK/tsocks-1.8beta5+ds1/libtsocks.so  singularity run -B /m100_work -B /cvmfs -B /m100_work/INF21_lhc_0/CMS/SITECONF:/marconi_work/Pra18_4658/cms/SITECONF cc7_ppc64le_gfal_0.3.sif bash
+ export X509_CERT_DIR=/cvmfs/grid.cern.ch/etc/grid-security/certificates/
+ export X509_VOMSES=/cvmfs/grid.cern.ch/etc/grid-security/vomses
+ export VOMS_USERCONF=/cvmfs/grid.cern.ch/etc/grid-security/vomses
+ cd /m100_work/INF21_lhc_0/TESTS_WMA/m100_wma_tests/pilot
+ export X509_USER_PROXY=/m100_work/INF21_lhc_0/TESTS_WMA/m100_wma_tests/pilot/cert.pilot
+ voms-proxy-info -all
 
 se non funziona, serve un nuovo cert (LUNGO!)
 
-== mkdir GWMS_DIR
-== mkdir GWMS_DIR/bin
-== export GWMS_DIR=`pwd`/GWMS_DIR
+ mkdir GWMS_DIR
+ mkdir GWMS_DIR/bin
+ export GWMS_DIR=`pwd`/GWMS_DIR
 
-== ./glidein_startup_wrapper
+ ./glidein_startup_wrapper
 
