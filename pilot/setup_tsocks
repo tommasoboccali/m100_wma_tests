@@ -16,6 +16,10 @@ poi mettere in bkg (se la porta e' diversa editare ~/.tsocks.conf
  voms-proxy-info -all
 
 se non funziona, serve un nuovo cert (LUNGO!)
+puoi fare
+ssh boccali@galilinux.pi.infn.it
+per essere sicuro che il tsocks funzioni
+
 
  mkdir GWMS_DIR
  mkdir GWMS_DIR/bin
