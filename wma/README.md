@@ -69,4 +69,8 @@ per esempio funziona con on logging.info("TB_ Setting poll interval to %s second
 - cancello tutto
 ### condorq | awk '{print $1}' | xargs condor_rm
 
+# DOVE TROVARE I LOGS?
+
+== /data/srv/wmagent/v1.4.5.patch2/install/wmagent/JobCreator/JobCache/tboccali_TC_SLC7_Marconi_TB_CMS_Marconi_210506_093157_827/SinglePiE50HCAL_pythia8_2018_GenSimFull/SinglePiE50HCAL_pythia8_2018_GenSimFullMergeFEVTDEBUGoutput/JobCollection_59_0/job_1482
+
 
