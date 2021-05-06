@@ -1,7 +1,7 @@
  srun -v -A INF21_lhc_0 -p m100_usr_prod  -t 1000  --gres=gpu:0  --cpus-per-task=128  --pty /bin/bash
  cd $WORK/tsocks-1.8beta5+ds1/
- export LD_PRELOAD=`pwd`/libtsocks.so
  ssh -N -D 1087 -o TCPKeepAlive=yes -o ServerAliveInterval=60 tboccali@lxplus.cern.ch
+ export LD_PRELOAD=`pwd`/libtsocks.so
 
 poi mettere in bkg (se la porta e' diversa editare ~/.tsocks.conf
 
