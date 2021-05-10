@@ -7,7 +7,7 @@ poi mettere in bkg (se la porta e' diversa editare ~/.tsocks.conf
 
  module load singularity
  cd /m100_work/INF21_lhc_0/IMAGES
- LD_PRELOAD=$WORK/tsocks-1.8beta5+ds1/libtsocks.so  singularity run -B /cvmfs/etc/grid.cern.ch/grid-security:/etc/grid-security   -B /m100_work -B /cvmfs -B /m100_work/INF21_lhc_0/CMS/SITECONF:/marconi_work/Pra18_4658/cms/SITECONF cc7_ppc64le_gfal_0.3.sif bash
+ LD_PRELOAD=$WORK/tsocks-1.8beta5+ds1/libtsocks.so  singularity run -B /cvmfs/grid.cern.ch/etc/grid-security:/etc/grid-security   -B /m100_work -B /cvmfs -B /m100_work/INF21_lhc_0/CMS/SITECONF:/marconi_work/Pra18_4658/cms/SITECONF cc7_ppc64le_gfal_0.3.sif bash
  export X509_CERT_DIR=/cvmfs/grid.cern.ch/etc/grid-security/certificates/
  export X509_VOMSES=/cvmfs/grid.cern.ch/etc/grid-security/vomses
  export VOMS_USERCONF=/cvmfs/grid.cern.ch/etc/grid-security/vomses
