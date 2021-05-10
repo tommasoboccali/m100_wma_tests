@@ -9,3 +9,4 @@ $manage execute-agent wmagent-resource-control --site-name=T3_IT_Opportunistic_d
 $manage execute-agent wmagent-resource-control --site-name=T3_IT_Opportunistic_dodas --task-type=Cleanup --pending-slots=0 --running-slots=0
 $manage execute-agent wmagent-resource-control --site-name=T3_IT_Opportunistic_dodas --task-type=Skim --pending-slots=0 --running-slots=0 
 $manage execute-agent wmagent-resource-control --site-name=T3_IT_Opportunistic_dodas --task-type=Harvesting --pending-slots=0 --running-slots=0 
+$manage execute-agent wmagent-resource-control --plugin=SimpleCondorPlugin --pending-slots=200 --running-slots=200 --add-one-site T2_CH_CERN
