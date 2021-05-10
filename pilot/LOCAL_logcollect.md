@@ -60,4 +60,8 @@ total 386
 
       
       
+Nota: il file per inserire cambiamenti e' job/WMCore/WMRuntime/Tools/Scram.py ma per avere il file da editare bisogna fare unzip di WMCore.zip
+
+
+      
 
