@@ -35,4 +35,29 @@ Failed to open the file 'root://xs-303.cr.cnaf.infn.it:1094//store/unmerged/logs
    Additional Info:
       [a] XrdCl::File::Open(name='root://xs-303.cr.cnaf.infn.it:1094//store/unmerged/logs/prod/2021/5/7/tboccali_TC_SLC7_Marconi_TB_CMS_Marconi_210507_162144_8756/SinglePiE50HCAL_pythia8_2018_GenSimFull/SinglePiE50HCAL_pythia8_2018_GenSimFullMergeFEVTDEBUGoutput/0000/0/16b16de9-20d8-4871-add2-091165f62080-0-0-logArchive.tar.gz', flags=0x10, permissions=0660) => error '[FATAL] Auth failed' (errno=0, code=204)
       [b] Remote server already encountered a fatal error; no redirections were performed.
+      
+      
+      
+it creates 
+
+ls -l  job/WMTaskSpace/logCollect1/
+total 130
+-rw-r--r--  1 tboccali interactive    0 May 10 10:05 16b16de9-20d8-4871-add2-091165f62080-0-0-logArchive.tar.gz
+
+di lunghezza 0 perche' fallisce
+
+ma invece:
+
+fare scram arch in CMSSW_11_1_0,
+
+env X509_USER_PROXY=/m100_work/INF21_lhc_0/TESTS_WMA/m100_wma_tests/pilot/cert.pilot edmCopyUtil /store/unmerged/logs/prod/2021/5/7/tboccali_TC_SLC7_Marconi_TB_CMS_Marconi_210507_162144_8756/SinglePiE50HCAL_pythia8_2018_GenSimFull/SinglePiE50HCAL_pythia8_2018_GenSimFullMergeFEVTDEBUGoutput/0000/0/16b16de9-20d8-4871-add2-091165f62080-0-0-logArchive.tar.gz /m100_work/INF21_lhc_0/test_wma/job/WMTaskSpace/logCollect1
+
+funziona!
+
+ls -l  job/WMTaskSpace/logCollect1/
+total 386
+-rw-r--r--  1 tboccali interactive 184122 May 10 10:07 16b16de9-20d8-4871-add2-091165f62080-0-0-logArchive.tar.gz
+
+      
+      
 
