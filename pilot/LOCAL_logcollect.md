@@ -4,6 +4,9 @@ dentro un ambiente singularity con tsocks (vedere file \*tsocks al livello sopra
 
 *bash ./condor_exec.exe bash tboccali_TC_SLC7_Marconi_TB_CMS_Marconi_210507_162144_8756-Sandbox.tar.bz2 3344*
 
+
+NOTA: METTO LA COPIA ORIG IN /m100_work/INF21_lhc_0/test_wma/ORIG, non modificate quella ....
+
 si ottiene
 
 ======== WMAgent final job runtime checks STARTING at Mon May 10 07:53:33 GMT 2021 ========
