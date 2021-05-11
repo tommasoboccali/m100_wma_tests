@@ -9,6 +9,11 @@ python inject-test-wfs.py -u "https://cmsweb-testbed.cern.ch" -m DMWM -f TC_SLC7
 NOTA: giusto pare sia
 python inject-test-wfs.py --debug -u "https://cmsweb-testbed.cern.ch" -m DMWM -f TC_SLC7_Marconi.json -c FF_CMS_Marconi -r TB_CMS_Marconi -t testbed-vocms0263 -a DMWM_Test -p CMS_Marconi_TBv20210430_test -s "T1_IT_CNAF"
 
+ATTENZIONE AL CAMBIO DI NOME DEL TEAM
+
+python inject-test-wfs.py --debug -u "https://cmsweb-testbed.cern.ch" -m DMWM -f TC_SLC7_Marconi.json -c FF_CMS_Marconi -r TB_CMS_Marconi -t REPLACE_TEAM_NAME -a DMWM_Test -p CMS_Marconi_TBv20210430_test -s "T1_IT_CNAF"
+
+
 altrimenti non becca il PNN .. stiamo studiando
 
 
