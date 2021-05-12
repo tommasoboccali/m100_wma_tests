@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH -A INF21_lhc_0
+#SBATCH -p m100_usr_prod
+#SBATCH --time 24:00:00     # format: HH:MM:SS
+#SBATCH -N 1                # 1 node
+#SBATCH --ntasks-per-node=8 # 
+#SBATCH --cpus-per-task=16  # the product should be 128
+#SBATCH --gres=gpu:0        # 1 gpus per node out of 4
+##SBATCH --mem=7100          # memory per node out of 246000MB
+#SBATCH --job-name=CMS_GLIDEIN
+
+export GLIDEINSCRIPTS=$WORK/slurm_glidein
+
+export CERTIFICATE=$GLIDEINSCRIPTS/certificate.cert
+
+# I cannot easily check if the certificate is valid from here .. I need to trust
+
+srun $GLIDEINSCRIPTS$/slurm_script.sh
+
+echo == SLURM GLIDEIN finishing at `date` with code $?
+
+exit 0
