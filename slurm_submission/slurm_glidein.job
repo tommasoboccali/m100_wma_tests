@@ -1,7 +1,7 @@
 #!/bin/bash
 export account=INF21_lhc_0
 export partition=m100_usr_prod
-export length=1200 # in minute
+export length=1400 # in minute
 #export ntasks-per-node=8 
 export cpus=128  # the product should be 128
 export gpu="gpu:0"        # 1 gpus per node out of 4
