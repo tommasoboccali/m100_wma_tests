@@ -2,6 +2,7 @@
 
 # i cannot set the tsocks from here, I skip
 
+echo == SLURM SCRIPT starting at `date`
 
 export WORK_AREA=$WORK/glidein_work_area
 mkdir -p $WORK_AREA

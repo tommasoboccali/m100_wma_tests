@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo == SING SCRIPT staring at `date`
+
+
+
 #check certificate
 echo === Checking Certificate $CERTIFICATE for validity of 24h
 export X509_USER_PROXY=$CERTIFICATE
@@ -24,6 +28,8 @@ mkdir GWMS_DIR/bin
 export GWMS_DIR=`pwd`/GWMS_DIR
 
 ./glidein_startup_wrapper
+
+echo == SING SCRIPT finishing at `date` with code $?
 
 exit 0
 
