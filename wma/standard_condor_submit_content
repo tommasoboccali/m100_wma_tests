@@ -1,0 +1,117 @@
+this file contains the classad (condor_q -l) from a very easy submitted job on vocms0263
+
+
+cmst1@vocms0263:~ $ cat test.job
+  ########################
+  # Submit description file for hello program
+  ########################
+  Executable     =  /bin/sleep
+  Universe       = vanilla
+  Output         = hello.out
+  Log            = hello.log
+  Queue
+
+-------
+
+
+cmst1@vocms0263:~ $ condor_submit -verbose test.job
+Submitting job(s)
+** Proc 2749.0:
+Arguments = ""
+CMS_ALLOW_OVERFLOW = "False"
+ClusterId = 2749
+Cmd = "/bin/sleep"
+CommittedSlotTime = 0
+CommittedSuspensionTime = 0
+CommittedTime = 0
+CompletionDate = 0
+CondorPlatform = "$CondorPlatform: x86_64_CentOS7 $"
+CondorVersion = "$CondorVersion: 8.9.10 Nov 24 2020 BuildID: 524105 PackageID: 8.9.10-1 $"
+CoreSize = 0
+CumulativeRemoteSysCpu = 0.0
+CumulativeRemoteUserCpu = 0.0
+CumulativeSlotTime = 0
+CumulativeSuspensionTime = 0
+CurrentHosts = 0
+DiskUsage = 33
+EncryptExecuteDirectory = false
+EnteredCurrentStatus = 1619798724
+Environment = ""
+Err = "/dev/null"
+ExecutableSize = 33
+ExitBySignal = false
+ExitStatus = 0
+FileSystemDomain = "cern.ch"
+ImageSize = 33
+In = "/dev/null"
+Iwd = "/afs/cern.ch/user/c/cmst1"
+JOB_GLIDECLIENT_Name = "$$(GLIDECLIENT_Name:Unknown)"
+JOB_GLIDEIN_CMSSite = "$$(GLIDEIN_CMSSite:Unknown)"
+JOB_GLIDEIN_ClusterId = "$$(GLIDEIN_ClusterId:Unknown)"
+JOB_GLIDEIN_Entry_Name = "$$(GLIDEIN_Entry_Name:Unknown)"
+JOB_GLIDEIN_Factory = "$$(GLIDEIN_Factory:Unknown)"
+JOB_GLIDEIN_Job_Max_Time = "$$(GLIDEIN_Job_Max_Time:Unknown)"
+JOB_GLIDEIN_MaxMemMBs = "$$(GLIDEIN_MaxMemMBs:Unknown)"
+JOB_GLIDEIN_Max_Walltime = "$$(GLIDEIN_Max_Walltime:Unknown)"
+JOB_GLIDEIN_Memory = "$$(Memory:Unknown)"
+JOB_GLIDEIN_Name = "$$(GLIDEIN_Name:Unknown)"
+JOB_GLIDEIN_ProcId = "$$(GLIDEIN_ProcId:Unknown)"
+JOB_GLIDEIN_SEs = "$$(GLIDEIN_SEs:Unknown)"
+JOB_GLIDEIN_Schedd = "$$(GLIDEIN_Schedd:Unknown)"
+JOB_GLIDEIN_Site = "$$(GLIDEIN_Site:Unknown)"
+JOB_GLIDEIN_SiteWMS = "$$(GLIDEIN_SiteWMS:Unknown)"
+JOB_GLIDEIN_SiteWMS_JobId = "$$(GLIDEIN_SiteWMS_JobId:Unknown)"
+JOB_GLIDEIN_SiteWMS_Queue = "$$(GLIDEIN_SiteWMS_Queue:Unknown)"
+JOB_GLIDEIN_SiteWMS_Slot = "$$(GLIDEIN_SiteWMS_Slot:Unknown)"
+JOB_GLIDEIN_ToDie = "$$(GLIDEIN_ToDie:Unknown)"
+JOB_GLIDEIN_ToRetire = "$$(GLIDEIN_ToRetire:Unknown)"
+JOB_Site = "$$(GLIDEIN_Site:Unknown)"
+JobAdInformationAttrs = "JOB_Site JOB_GLIDEIN_Entry_Name JOB_GLIDEIN_Name JOB_GLIDEIN_Factory JOB_GLIDEIN_Schedd JOB_GLIDEIN_ClusterId JOB_GLIDEIN_ProcId JOB_GLIDEIN_Site JOB_GLIDEIN_SiteWMS JOB_GLIDEIN_SiteWMS_Slot JOB_GLIDEIN_SiteWMS_JobId JOB_GLIDEIN_SiteWMS_Queue RemoveReason"
+JobLeaseDuration = 2400
+JobNotification = 0
+JobPrio = 0
+JobStatus = 1
+JobUniverse = 5
+LastSuspensionTime = 0
+LeaveJobInQueue = false
+MaxHosts = 1
+MinHosts = 1
+MyType = "Job"
+NumCkpts = 0
+NumJobCompletions = 0
+NumJobStarts = 0
+NumRestarts = 0
+NumSystemHolds = 0
+OnExitHold = false
+OnExitRemove = true
+Out = "hello.out"
+Owner = undefined
+PeriodicHold = false
+PeriodicRelease = false
+PeriodicRemove = false
+PostJobPrio2 =  -quantize(QDate,{ 3600 })
+ProcId = 0
+QDate = 1619798724
+Rank = 0.0
+RemoteSysCpu = 0.0
+RemoteUserCpu = 0.0
+RemoteWallClockTime = 0.0
+RequestCpus = 1
+RequestDisk = 1
+RequestMemory = 1024
+Requirements = (TARGET.Arch == "X86_64") && (TARGET.OpSys == "LINUX") && (TARGET.Disk >= RequestDisk) && (TARGET.Memory >= RequestMemory) && ((TARGET.FileSystemDomain == MY.FileSystemDomain) || (TARGET.HasFileTransfer))
+RootDir = "/"
+ShouldTransferFiles = "IF_NEEDED"
+StreamOut = false
+TargetType = "Machine"
+TotalSuspensions = 0
+TransferErr = false
+TransferIn = false
+TransferInputSizeMB = 0
+UserLog = "/afs/cern.ch/user/c/cmst1/hello.log"
+WantCheckpoint = false
+WantRemoteIO = true
+WantRemoteSyscalls = false
+WhenToTransferOutput = "ON_EXIT"
+accounting_group = production
+use_x509userproxy = true

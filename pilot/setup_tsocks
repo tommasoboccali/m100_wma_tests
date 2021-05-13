@@ -1,0 +1,38 @@
+ srun -v -A INF21_lhc_0 -p m100_usr_prod  -t 1000  --gres=gpu:0  --cpus-per-task=128  --pty /bin/bash
+ cd $WORK/tsocks-1.8beta5+ds1/
+ ssh -N -D 1087 -o TCPKeepAlive=yes -o ServerAliveInterval=60 tboccali@lxplus.cern.ch
+ export LD_PRELOAD=`pwd`/libtsocks.so
+
+poi mettere in bkg (se la porta e' diversa editare ~/.tsocks.conf
+
+ module load singularity
+ cd /m100_work/INF21_lhc_0/IMAGES
+ LD_PRELOAD=$WORK/tsocks-1.8beta5+ds1/libtsocks.so  singularity run -B /cvmfs/grid.cern.ch/etc/grid-security:/etc/grid-security   -B /m100_work -B /cvmfs -B /m100_work/INF21_lhc_0/CMS/SITECONF:/marconi_work/Pra18_4658/cms/SITECONF cc7_ppc64le_gfal_0.3.sif bash
+ #export X509_CERT_DIR=/cvmfs/grid.cern.ch/etc/grid-security/certificates/
+ #export X509_VOMSES=/cvmfs/grid.cern.ch/etc/grid-security/vomses
+ #export VOMS_USERCONF=/cvmfs/grid.cern.ch/etc/grid-security/vomses
+ cd /m100_work/INF21_lhc_0/TESTS_WMA/m100_wma_tests/pilot
+ export X509_USER_PROXY=/m100_work/INF21_lhc_0/TESTS_WMA/m100_wma_tests/pilot/cert.pilot
+ voms-proxy-info -all
+
+se non funziona, serve un nuovo cert (LUNGO!)
+puoi fare
+ssh boccali@galilinux.pi.infn.it
+per essere sicuro che il tsocks funzioni
+
+
+ mkdir GWMS_DIR
+ mkdir GWMS_DIR/bin
+ export GWMS_DIR=`pwd`/GWMS_DIR
+
+ ./glidein_startup_wrapper
+
+
+
+HELPPPPP
+
+
+bash ./condor_exec.exe tboccali_TC_SLC7_Marconi_TB_CMS_Marconi_210507_135050_3424-Sandbox.tar.bz2 2277
+
+
+2021-05-07 16:45:04,100:INFO:Scram:    Invoking command: env X509_USER_PROXY=/m100_work/INF21_lhc_0/TESTS_WMA/m100_wma_tests/pilot/glide_tkPRKJ/execute/dir_127861/myproxy.pem edmCopyUtil /store/unmerged/logs/prod/2021/5/7/tboccali_TC_SLC7_Marconi_TB_CMS_Marconi_210507_135050_3424/SinglePiE50HCAL_pythia8_2018_GenSimFull/0000/0/a149b393-8508-453f-9fe4-50fbbc619a09-10-0-logArchive.tar.gz /store/unmerged/logs/prod/2021/5/7/tboccali_TC_SLC7_Marconi_TB_CMS_Marconi_210507_135050_3424/SinglePiE50HCAL_pythia8_2018_GenSimFull/0000/0/a149b393-8508-453f-9fe4-50fbbc619a09-38-0-logArchive.tar.gz /store/unmerged/logs/prod/2021/5/7/tboccali_TC_SLC7_Marconi_TB_CMS_Marconi_210507_135050_3424/SinglePiE50HCAL_pythia8_2018_GenSimFull/0000/0/a149b393-8508-453f-9fe4-50fbbc619a09-8-0-logArchive.tar.gz /store/unmerged/logs/prod/2021/5/7/tboccali_TC_SLC7_Marconi_TB_CMS_Marconi_210507_135050_3424/SinglePiE50HCAL_pythia8_2018_GenSimFull/0000/0/a149b393-8508-453f-9fe4-50fbbc619a09-27-0-logArchive.tar.gz /store/unmerged/logs/prod/2021/5/7/tboccali_TC_SLC7_Marconi_TB_CMS_Marconi_210507_135050_3424/SinglePiE50HCAL_pythia8_2018_GenSimFull/0000/0/a149b393-8508-453f-9fe4-50fbbc619a09-42-0-logArchive.tar.gz /store/unmerged/logs/prod/2021/5/7/tboccali_TC_SLC7_Marconi_TB_CMS_Marconi_210507_135050_3424/SinglePiE50HCAL_pythia8_2018_GenSimFull/0000/0/a149b393-8508-453f-9fe4-50fbbc619a09-7-0-logArchive.tar.gz /store/unmerged/logs/prod/2021/5/7/tboccali_TC_SLC7_Marconi_TB_CMS_Marconi_210507_135050_3424/SinglePiE50HCAL_pythia8_2018_GenSimFull/0000/0/a149b393-8508-453f-9fe4-50fbbc619a09-1-0-logArchive.tar.gz /store/unmerged/logs/prod/2021/5/7/tboccali_TC_SLC7_Marconi_TB_CMS_Marconi_210507_135050_3424/SinglePiE50HCAL_pythia8_2018_GenSimFull/0000/0/a149b393-8508-453f-9fe4-50fbbc619a09-32-0-logArchive.tar.gz /store/unmerged/logs/prod/2021/5/7/tboccali_TC_SLC7_Marconi_TB_CMS_Marconi_210507_135050_3424/SinglePiE50HCAL_pythia8_2018_GenSimFull/0000/0/a149b393-8508-453f-9fe4-50fbbc619a09-18-0-logArchive.tar.gz /store/unmerged/logs/prod/2021/5/7/tboccali_TC_SLC7_Marconi_TB_CMS_Marconi_210507_135050_3424/SinglePiE50HCAL_pythia8_2018_GenSimFull/0000/0/a149b393-8508-453f-9fe4-50fbbc619a09-22-0-logArchive.tar.gz /m100_work/INF21_lhc_0/TESTS_WMA/m100_wma_tests/pilot/glide_tkPRKJ/execute/dir_127861/job/WMTaskSpace/logCollect1

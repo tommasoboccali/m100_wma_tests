@@ -1,0 +1,12 @@
+Quote nell'agent:
+
+$manage execute-agent wmagent-resource-control --plugin=SimpleCondorPlugin --pending-slots=200 --running-slots=200 --add-one-site T1_IT_CNAF
+$manage execute-agent wmagent-resource-control --site-name=T3_IT_Opportunistic_dodas --cms-name=T3_IT_Opportunistic_dodas --ce-name T3_IT_Opportunistic_dodas --pnn=T1_IT_CNAF_Disk --plugin=SimpleCondorPlugin  --pending-slots=200 --running-slots=200
+$manage execute-agent wmagent-resource-control --site-name=T3_IT_Opportunistic_dodas --task-type=Processing --pending-slots=2000 --running-slots=2000
+$manage execute-agent wmagent-resource-control --site-name=T3_IT_Opportunistic_dodas --task-type=Production --pending-slots=2000 --running-slots=2000
+$manage execute-agent wmagent-resource-control --site-name=T3_IT_Opportunistic_dodas --task-type=Merge --pending-slots=0 --running-slots=0
+$manage execute-agent wmagent-resource-control --site-name=T3_IT_Opportunistic_dodas --task-type=LogCollect --pending-slots=0 --running-slots=0
+$manage execute-agent wmagent-resource-control --site-name=T3_IT_Opportunistic_dodas --task-type=Cleanup --pending-slots=0 --running-slots=0
+$manage execute-agent wmagent-resource-control --site-name=T3_IT_Opportunistic_dodas --task-type=Skim --pending-slots=0 --running-slots=0 
+$manage execute-agent wmagent-resource-control --site-name=T3_IT_Opportunistic_dodas --task-type=Harvesting --pending-slots=0 --running-slots=0 
+$manage execute-agent wmagent-resource-control --plugin=SimpleCondorPlugin --pending-slots=200 --running-slots=200 --add-one-site T2_CH_CERN

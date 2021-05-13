@@ -1,0 +1,27 @@
+#!/bin/bash
+export account=INF21_lhc_0
+export partition=m100_usr_prod
+export length=1400 # in minute
+#export ntasks-per-node=8 
+export cpus=128  # the product should be 128
+export gpu="gpu:0"        # 1 gpus per node out of 4
+export jobname=CMS_GLIDEIN
+######## IMPORTANTE
+export use_tsocks=1
+export tsocks_ssh_cmd="ssh -N -D 1087 -o TCPKeepAlive=yes -o ServerAliveInterval=60 boccali@lxplus.cern.ch"
+########
+
+export GLIDEINSCRIPTS=$WORK/slurm_glidein
+
+export CERTIFICATE=$GLIDEINSCRIPTS/certificate.cert
+
+# I cannot easily check if the certificate is valid from here .. I need to trust
+
+echo == SLURM GLIDEIN starting at `date` 
+
+
+srun -A $account  --job-name=$jobname -p $partition -t $length --gres=$gpu --cpus-per-task=$cpus $GLIDEINSCRIPTS/slurm_script.sh
+
+echo == SLURM GLIDEIN finishing at `date` with code $?
+
+exit 0

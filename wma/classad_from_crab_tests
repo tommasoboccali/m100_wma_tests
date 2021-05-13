@@ -1,0 +1,300 @@
+questo e' quello che c'era nello startd a dicembre, tests di m100 + crab
+
+12/18/20 13:06:34 (pid:122091) slot1_63: REQ_CLASSAD:
+        accounting_group = analysis
+        AccountingGroup = "highprio.tboccali"
+        AcctGroup = "analysis"
+        AcctGroupUser = "tboccali"
+        Arguments = "-a sandbox.tar.gz --sourceURL=https://cmsweb.cern.ch/crabcache --jobNumber=199 --cmsswVersion=CMSSW_11_1_0 --scramArch=slc7_ppc64le_gcc820 --inputFile=job_input_file_list_199.txt --runAndLumis=job_lumis_199.json --lheInputFiles=False --firstEvent=21781 --firstLumi=397 --lastEvent=21890 --firstRun=1 --seeding=AutomaticSeeding --scriptExe=None --eventsPerLumi=100 --maxRuntime=-60 --scriptArgs=[] -o {}"
+        BytesRecvd = 0.0
+        BytesSent = 0.0
+        ClusterId = 464989
+        Cmd = "/data/srv/glidecondor/condor_local/spool/4791/0/cluster464791.proc0.subproc0/gWMS-CMSRunAnalysis.sh"
+        CMS_ALLOW_OVERFLOW = "True"
+        CMS_JobType = "Analysis"
+        CMS_SubmissionTool = "CRAB"
+        CMS_TaskType = "cmsRun"
+        CMS_Type = "Analysis"
+        CMS_WMTool = "User"
+        CMSGroups = "/cms,/cms/itcms"
+        CommittedSlotTime = 0
+        CommittedSuspensionTime = 0
+        CommittedTime = 0
+        CompletionDate = 0
+        CondorPlatform = "$CondorPlatform: x86_64_CentOS7 $"
+        CondorVersion = "$CondorVersion: 8.9.10 Nov 24 2020 BuildID: 524105 PackageID: 8.9.10-1 $"
+        CoreSize = -1
+        CpusProvisioned = 1
+        CRAB_AdditionalOutputFiles = {  }
+        CRAB_AlgoArgs = "{\"splitOnRun\": false, \"events_per_job\": {\"halt_job_on_file_boundaries\": false, \"events_per_lumi\": 100, \"algorithm\": \"EventBased\", \"applyLumiCorrection\": true, \"runs\": [], \"lumis\": [], \"splitOnRun\": false, \"events_per_job\": 110}, \"halt_job_on_file_boundaries\": false}"
+        CRAB_ASODB = "filetransfers"
+        CRAB_ASOTimeout = 86400
+        CRAB_ASOURL = "https://cmsweb.cern.ch/crabserver/prod"
+        CRAB_AsyncDest = "T2_IT_Pisa"
+        CRAB_DataBlock = "MCFakeBlock"
+        CRAB_DBSURL = "https://cmsweb.cern.ch/dbs/prod/global/DBSReader"
+        CRAB_Destination = "srm://stormfe1.pi.infn.it:8444/srm/managerv2?SFN=/cms/store/user/tboccali/CRAB_PrivateMC/lebanontraining/201217_102006/0000/log/cmsRun_199.log.tar.gz, srm://stormfe1.pi.infn.it:8444/srm/managerv2?SFN=/cms/store/user/tboccali/CRAB_PrivateMC/lebanontraining/201217_102006/0000/minbias_199.root"
+        CRAB_EDMOutputFiles = { "minbias.root" }
+        CRAB_Id = "199"
+        CRAB_ISB = "https://cmsweb.cern.ch/crabcache"
+        CRAB_JobArch = "slc7_ppc64le_gcc820"
+        CRAB_JobCount = 455
+        CRAB_JobLogURL = "https://cmsweb.cern.ch/scheddmon/068/cms1515/201217_102006:tboccali_crab_ppc-3/job_out.199.0.txt"
+        CRAB_JobSW = "CMSSW_11_1_0"
+        CRAB_localOutputFiles = "minbias.root=minbias_199.root"
+        CRAB_NumAutomJobRetries = 2
+        CRAB_oneEventMode = 0
+        CRAB_OutLFNDir = "/store/user/tboccali/CRAB_PrivateMC/lebanontraining/201217_102006"
+        CRAB_OutTempLFNDir = "/store/temp/user/tboccali.5d5235e10001fe84da179aef34911dcf61c8299a/CRAB_PrivateMC/lebanontraining/201217_102006"
+        CRAB_PostJobLastUpdate = 0
+        CRAB_PostJobLogURL = "https://cmsweb.cern.ch/scheddmon/068/cms1515/201217_102006:tboccali_crab_ppc-3/postjob.199.0.txt"
+        CRAB_PostJobStatus = "NOT RUN"
+        CRAB_PrimaryDataset = "CRAB_PrivateMC"
+        CRAB_Publish = 0
+        CRAB_PublishDBSURL = "https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter"
+        CRAB_PublishGroupName = 0
+        CRAB_PublishName = "lebanontraining-00000000000000000000000000000000"
+        CRAB_ReqName = "201217_102006:tboccali_crab_ppc-3"
+        CRAB_RestHost = "cmsweb-k8s-prod.cern.ch"
+        CRAB_RestURInoAPI = "/crabserver/prod"
+        CRAB_Retry = 0
+        CRAB_RetryOnASOFailures = 1
+        CRAB_SaveLogsFlag = 0
+        CRAB_SiteBlacklist = {  }
+        CRAB_SiteWhitelist = {  }
+        CRAB_SplitAlgo = "EventBased"
+                CRAB_StageoutPolicy = "local,remote"
+        CRAB_SubmitterIpAddr = "137.138.77.53"
+        CRAB_TaskEndTime = 1610792406
+        CRAB_TaskLifetimeDays = 30
+        CRAB_TaskWorker = "crab-prod-tw01"
+        CRAB_TFileOutputFiles = {  }
+        CRAB_TransferOutputs = 1
+        CRAB_UserDN = "/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=tboccali/CN=447815/CN=Tommaso Boccali"
+        CRAB_UserGroup = undefined
+        CRAB_UserHN = "tboccali"
+        CRAB_UserRole = undefined
+        CRAB_Workflow = "201217_102006:tboccali_crab_ppc-3"
+        CumulativeRemoteSysCpu = 0.0
+        CumulativeRemoteUserCpu = 0.0
+        CumulativeSlotTime = 58.0
+        CumulativeSuspensionTime = 0
+        CurrentHosts = 1
+        DAGManJobId = 464791
+        DAGManNodesLog = "/data/srv/glidecondor/condor_local/spool/4791/0/cluster464791.proc0.subproc0/RunJobs.dag.nodes.log"
+        DAGManNodesMask = "0,1,2,4,5,7,9,10,11,12,13,16,17,24,27,35,36"
+        DAGNodeName = "Job199"
+        DAGParentNodeNames = ""
+        DESIRED_Archs = "X86_64"
+        DESIRED_CMSDataLocations = "T3_US_PuertoRico,T3_RU_MEPhI,T2_FI_HIP,T2_UK_SGrid_RALPP,T2_FR_GRIF_LLR,T3_US_Baylor,T3_UK_London_QMUL,T3_TW_NTU_HEP,T2_RU_SINP,T3_US_UMD,T3_US_Colorado,T3_US_Kansas,T3_GR_IASA,T2_I
+T_Bari,T2_US_UCSD,T2_RU_IHEP,T3_US_JHU,T3_BY_NCPHEP,T2_US_Vanderbilt,T3_US_UCR,T3_TW_NCU,T2_CH_CSCS,T2_UA_KIPT,T2_PK_NCP,T3_KR_KNU,T2_FR_IPHC,T3_US_OSU,T3_US_TAMU,T3_IT_Trieste,T2_CN_Beijing,T2_UK_London_Brunel,T3_IN_
+PUHEP,T3_US_OSG,T3_CH_CERN_DOMA,T2_EE_Estonia,T2_IN_TIFR,T2_IT_Rome,T2_US_Florida,T3_US_Princeton_ICSE,T3_IT_MIB,T3_US_PSC,T3_US_Rutgers,T2_US_Wisconsin,T2_HU_Budapest,T2_DE_RWTH,T3_IT_Perugia,T3_UK_SGrid_Oxford,T3_US
+_TACC,T3_US_NERSC,T2_BR_UERJ,T2_CH_CERN,T3_MX_Cinvestav,T3_US_FNALLPC,T3_RU_FIAN,T2_ES_IFCA,T3_ES_Oviedo,T3_US_NotreDame,T2_DE_DESY,T3_HU_Debrecen,T2_US_Caltech,T3_US_VC3_NotreDame,T3_FR_IPNL,T0_CH_CSCS_HPC,T3_BG_UNI_
+SOFIA,T3_UK_London_RHUL,T3_IN_TIFRCloud,T3_CN_PKU,T2_UK_London_IC,T2_US_Nebraska,T2_ES_CIEMAT,T3_UK_ScotGrid_GLA,T2_KR_KISTI,T3_KR_UOS,T2_BR_SPRACE,T2_TR_METU,T2_AT_Vienna,T2_US_Purdue,T3_US_Rice,T2_TW_NCHC,T2_BE_UCL,
+T3_US_FIT,T2_UK_SGrid_Bristol,T2_PT_NCG_Lisbon,T2_IT_Legnaro,T2_RU_INR,T3_US_SDSC,T2_RU_JINR,T2_IT_Pisa,T2_GR_Ioannina,T3_US_MIT,T2_CH_CERN_HLT,T2_FR_GRIF_IRFU,T3_US_UMiss,T2_FR_CCIN2P3,T2_US_MIT,T2_BE_IIHE,T2_RU_ITEP
+,T2_PL_Swierk,T3_CH_PSI,T3_IT_Bologna"
+        DESIRED_CMSDataset = undefined
+        DESIRED_Overflow_Region = strcat(ifthenelse(OVERFLOW_US =?= "True","US","none"),",",ifthenelse(OVERFLOW_IT =?= "True","IT","none"),",",ifthenelse(OVERFLOW_UK =?= "True","UK","none"))
+        DESIRED_SITES = "T3_IT_Opportunistic_dodas"
+        DiskProvisioned = 19014714654
+        DiskUsage = 2000
+        DiskUsage_RAW = 1796
+        EncryptExecuteDirectory = false
+        EnteredCurrentStatus = 1608293169
+        Environment = "SCRAM_ARCH=slc7_ppc64le_gcc820 CRAB_RUNTIME_TARBALL=local CRAB_TASKMANAGER_TARBALL=local"
+        Err = "job_err.199"
+        EstimatedWallTimeMins = 1250
+        ExecutableSize = 10
+        ExecutableSize_RAW = 10
+        ExitBySignal = false
+        ExitStatus = 0
+        GlobalJobId = "crab3@vocms068.cern.ch#464989.0#1608200467"
+        ImageSize = 10
+        ImageSize_RAW = 10
+        In = "/dev/null"
+        IotokensProvisioned = 0
+        Iwd = "/data/srv/glidecondor/condor_local/spool/4791/0/cluster464791.proc0.subproc0"
+        JOB_CMSSite = "T3_IT_Opportunistic_dodas"
+        JOB_Gatekeeper = ifthenelse(substr(Used_Gatekeeper,0,1) =!= "$",Used_Gatekeeper,ifthenelse(MATCH_GLIDEIN_Gatekeeper =!= undefined,MATCH_GLIDEIN_Gatekeeper,"Unknown"))
+        JOB_GLIDECLIENT_Name = "CMSG-ITB_gWMSFrontend-v1_0"
+        JOB_GLIDEIN_ClusterId = "0"
+        JOB_GLIDEIN_CMSSite = "T3_IT_Opportunistic_dodas"
+        JOB_GLIDEIN_Entry_Name = "CMSHTPC_T3_IT_Opportunistc_DodasFake"
+        JOB_GLIDEIN_Factory = "CERN-ITB"
+        JOB_GLIDEIN_Job_Max_Time = "14400"
+        JOB_GLIDEIN_Max_Walltime = "345600"
+        JOB_GLIDEIN_MaxMemMBs = "GLIDEIN_MaxMemMBs"
+        JOB_GLIDEIN_Memory = "2000"
+        JOB_GLIDEIN_Name = "gfactory_instance"
+        JOB_GLIDEIN_ProcId = "0"
+        JOB_GLIDEIN_Schedd = "UNAVAILABLE"
+        JOB_GLIDEIN_SEs = "Unknown"
+        JOB_GLIDEIN_Site = "CMSHTPC_T3_IT_Opportunistc_DodasFake"
+        JOB_GLIDEIN_SiteWMS = "SLURM"
+        JOB_GLIDEIN_SiteWMS_JobId = "1897023"
+        JOB_GLIDEIN_SiteWMS_Queue = "Unknown"
+                JOB_GLIDEIN_ToDie = "1608452614"
+        JOB_GLIDEIN_ToRetire = "1608438214"
+        JOB_Site = "CMSHTPC_T3_IT_Opportunistc_DodasFake"
+        JobAdInformationAttrs = "MATCH_EXP_JOBGLIDEIN_CMSSite, JOBGLIDEIN_CMSSite, RemoteSysCpu, RemoteUserCpu"
+        JobBatchId = "464791.0"
+        JobBatchName = "RunJobs.dag+464791"
+        JobCurrentStartDate = 1608293169
+        JOBGLIDEIN_CMSSite = "T3_IT_Opportunistic_dodas"
+        JobLastStartDate = 1608292794
+        JobLeaseDuration = 2400
+        JobNotification = 0
+        JobPrio = 10
+        JobRunCount = 2
+        JobStartDate = 1608292794
+        JobStatus = 2
+        JobUniverse = 5
+        LastJobLeaseRenewal = 1608293169
+        LastJobStatus = 1
+        LastMatchTime = 1608293169
+        LastPublicClaimId = "<10.39.37.20:39235?CCBID=137.138.44.37:9618%3faddrs%3d137.138.44.37-9618+[2001-1458-d00-1a--3b]-9618%26alias%3dvocms0816.cern.ch%26noUDP%26sock%3dcollector9669#79151&PrivNet=r237n20.m100.c
+ineca.it&addrs=10.39.37.20-39235&noUDP>#1608291780#126#..."
+        LastRejMatchReason = "no match found "
+        LastRejMatchTime = 1608293158
+        LastRemoteHost = "slot1_43@glidein_18417_85038879@r237n20.m100.cineca.it"
+        LastSuspensionTime = 0
+        LastVacateTime = 1608300000
+        LastVacateTime_RAW = 1608292852
+        LeaveJobInQueue = ifThenElse((JobStatus =?= 4 || JobStatus =?= 3) && (time() - EnteredCurrentStatus < 30 * 60 * 60),true,false)
+        MachineAttrCMSSubSiteName0 = "CNAF-CINECA"
+        MachineAttrCpus0 = 1
+        MachineAttrDIRACBenchmark0 = 11.9674485396
+        MachineAttrHAS_SINGULARITY0 = undefined
+        MachineAttrMJF_JOB_HS06_JOB0 = "Unknown"
+        MachineAttrSlotWeight0 = 1
+        MachineAttrTotalSlotCpus0 = 128
+        MATCH_EXP_JOB_GLIDECLIENT_Name = "CMSG-ITB_gWMSFrontend-v1_0"
+        MATCH_EXP_JOB_GLIDEIN_ClusterId = "0"
+        MATCH_EXP_JOB_GLIDEIN_CMSSite = "T3_IT_Opportunistic_dodas"
+        MATCH_EXP_JOB_GLIDEIN_Entry_Name = "CMSHTPC_T3_IT_Opportunistc_DodasFake"
+        MATCH_EXP_JOB_GLIDEIN_Factory = "CERN-ITB"
+        MATCH_EXP_JOB_GLIDEIN_Job_Max_Time = "14400"
+        MATCH_EXP_JOB_GLIDEIN_Max_Walltime = "345600"
+        MATCH_EXP_JOB_GLIDEIN_MaxMemMBs = "GLIDEIN_MaxMemMBs"
+        MATCH_EXP_JOB_GLIDEIN_Memory = "2000"
+        MATCH_EXP_JOB_GLIDEIN_Name = "gfactory_instance"
+        MATCH_EXP_JOB_GLIDEIN_ProcId = "0"
+        MATCH_EXP_JOB_GLIDEIN_Schedd = "UNAVAILABLE"
+        MATCH_EXP_JOB_GLIDEIN_SEs = "Unknown"
+        MATCH_EXP_JOB_GLIDEIN_Site = "CMSHTPC_T3_IT_Opportunistc_DodasFake"
+        MATCH_EXP_JOB_GLIDEIN_SiteWMS = "SLURM"
+        MATCH_EXP_JOB_GLIDEIN_SiteWMS_JobId = "1897023"
+        MATCH_EXP_JOB_GLIDEIN_SiteWMS_Queue = "Unknown"
+        MATCH_EXP_JOB_GLIDEIN_SiteWMS_Slot = "Unknown"
+        MATCH_EXP_JOB_GLIDEIN_ToDie = "1608452614"
+        MATCH_EXP_JOB_GLIDEIN_ToRetire = "1608438214"
+        MATCH_EXP_JOB_Site = "CMSHTPC_T3_IT_Opportunistc_DodasFake"
+        MATCH_EXP_JOBGLIDEIN_CMSSite = "T3_IT_Opportunistic_dodas"
+        MATCH_EXP_Used_Gatekeeper = "opportunistic.fake.it opportunistic.fake.it:9619"
+        MATCH_GLIDECLIENT_Name = "CMSG-ITB_gWMSFrontend-v1_0"
+        MATCH_GLIDEIN_ClusterId = 0
+        MATCH_GLIDEIN_CMSSite = "T3_IT_Opportunistic_dodas"
+        MATCH_GLIDEIN_Entry_Name = "CMSHTPC_T3_IT_Opportunistc_DodasFake"
+        MATCH_GLIDEIN_Factory = "CERN-ITB"
+        MATCH_GLIDEIN_Gatekeeper = "opportunistic.fake.it opportunistic.fake.it:9619"
+        MATCH_GLIDEIN_Job_Max_Time = 14400
+        MATCH_GLIDEIN_Max_Walltime = 345600
+        MATCH_GLIDEIN_MaxMemMBs = GLIDEIN_MaxMemMBs
+                MATCH_GLIDEIN_Name = "gfactory_instance"
+        MATCH_GLIDEIN_ProcId = 0
+        MATCH_GLIDEIN_Schedd = "UNAVAILABLE"
+        MATCH_GLIDEIN_SEs = "Unknown"
+        MATCH_GLIDEIN_Site = "CMSHTPC_T3_IT_Opportunistc_DodasFake"
+        MATCH_GLIDEIN_SiteWMS = "SLURM"
+        MATCH_GLIDEIN_SiteWMS_JobId = "1897023"
+        MATCH_GLIDEIN_SiteWMS_Queue = "Unknown"
+        MATCH_GLIDEIN_SiteWMS_Slot = "Unknown"
+        MATCH_GLIDEIN_ToDie = 1608452614
+        MATCH_GLIDEIN_ToRetire = 1608438214
+        MATCH_Memory = 2000
+        MaxHosts = 1
+        MaxWallTimeMins = 1250
+        MaxWallTimeMins_RAW = 1250
+        MaxWallTimeMinsRun = 1250
+        MemoryProvisioned = 2000
+        MinHosts = 1
+        MyAddress = "<137.138.62.197:4080?addrs=137.138.62.197-4080&alias=vocms068.cern.ch&noUDP&sock=shadow_4011125_2d00_20914>"
+        MyType = "Job"
+        NumCkpts = 0
+        NumCkpts_RAW = 0
+        NumJobCompletions = 0
+        NumJobMatches = 2
+        NumJobStarts = 0
+        NumRestarts = 0
+        NumShadowStarts = 2
+        NumSystemHolds = 0
+        OnExitHold = false
+        OnExitRemove = true
+        OrigMaxHosts = 1
+        Out = "job_out.199"
+        OVERFLOW_CHECK = ifthenelse(MATCH_GLIDEIN_CMSSite =!= undefined,ifthenelse(stringListMember(MATCH_GLIDEIN_CMSSite,DESIRED_Sites),false,true),false)
+        OVERFLOW_IT = ifthenelse(regexp("T[1,2]_IT_",DESIRED_Sites),"True",undefined)
+        OVERFLOW_UK = ifthenelse(regexp("T2_UK_London_",DESIRED_Sites),"True",undefined)
+        OVERFLOW_US = ifthenelse(regexp("T[1,2]_US_",DESIRED_Sites),"True",undefined)
+        Owner = "cms1515"
+        PeriodicHold = false
+        PeriodicRelease = (HoldReasonCode == 28) || (HoldReasonCode == 30) || (HoldReasonCode == 13) || (HoldReasonCode == 6)
+        PeriodicRemove = ((JobStatus =?= 5) && (time() - EnteredCurrentStatus > 7 * 60)) || ((JobStatus =?= 1) && (time() - EnteredCurrentStatus > 7 * 24 * 60 * 60)) || ((JobStatus =?= 2) && ((MemoryUsage =!= undefine
+d && MemoryUsage > RequestMemory) || (MaxWallTimeMinsRun * 60 < time() - EnteredCurrentStatus) || (DiskUsage > 20000000))) || (time() > CRAB_TaskEndTime) || ((JobStatus =?= 1) && (time() > (x509UserProxyExpiration + 8
+6400)))
+        PeriodicRemoveReason = ifThenElse(time() - EnteredCurrentStatus > 7 * 24 * 60 * 60 && isUndefined(MemoryUsage),"Removed due to idle time limit",ifThenElse(time() > x509UserProxyExpiration,"Removed job due to p
+roxy expiration",ifThenElse(MemoryUsage > RequestMemory,"Removed due to memory use",ifThenElse(MaxWallTimeMinsRun * 60 < time() - EnteredCurrentStatus,"Removed due to wall clock limit",ifThenElse(DiskUsage > 20000000,
+"Removed due to disk usage",ifThenElse(time() > CRAB_TaskEndTime,"Removed due to reached CRAB_TaskEndTime","Removed due to job being held"))))))
+        PostJobPrio1 = -1608200424
+        PostJobPrio2 = 0
+        PreJobPrio1 = 1
+        ProcId = 0
+        ProvisionedResources = "Cpus Memory Disk Swap Iotokens"
+        PublicClaimId = "<10.39.37.20:39235?CCBID=137.138.44.37:9618%3faddrs%3d137.138.44.37-9618+[2001-1458-d00-1a--3b]-9618%26alias%3dvocms0816.cern.ch%26noUDP%26sock%3dcollector9669#79151&PrivNet=r237n20.m100.cinec
+a.it&addrs=10.39.37.20-39235&noUDP>#1608291780#519#..."
+        QDate = 1608200467
+        Rank = 0.0
+        RemoteHost = "slot1_63@glidein_18417_85038879@r237n20.m100.cineca.it"
+        RemoteSlotID = 1
+        RemoteSysCpu = 0.0
+        RemoteUserCpu = 0.0
+        RemoteWallClockTime = 58.0
+        RequestCpus = 1
+                RequestDisk = 100000
+        RequestDisk_RAW = 1
+        RequestMemory = 2000
+        RequestMemory_RAW = 2000
+        REQUIRED_OS = "rhel7"
+        Requirements = Arch =?= "ppc64le"
+        RootDir = "/"
+        ShadowBday = 1608293169
+        ShouldTransferFiles = "YES"
+        SpoolOnEvict = false
+        StartdIpAddr = "<10.39.37.20:39235?CCBID=137.138.44.37:9618%3faddrs%3d137.138.44.37-9618+[2001-1458-d00-1a--3b]-9618%26alias%3dvocms0816.cern.ch%26noUDP%26sock%3dcollector9669#79151&PrivNet=r237n20.m100.cineca.it&addrs=10.39.37.20-39235&noUDP>"
+        StartdPrincipal = "execute-side@matchsession/130.186.16.242"
+        StreamErr = false
+        StreamOut = false
+        SubmitEventNotes = "DAG Node: Job199"
+        TargetType = "Machine"
+        TaskType = "Job"
+        TotalSubmitProcs = 1
+        TotalSuspensions = 0
+        TransferIn = false
+        TransferInput = "CMSRunAnalysis.sh,cmscp.py,CMSRunAnalysis.tar.gz,sandbox.tar.gz,run_and_lumis.tar.gz,input_files.tar.gz"
+        TransferInputSizeMB = 1
+        TransferOutput = "jobReport.json.199,WMArchiveReport.json.199"
+        use_x509userproxy = true
+        Used_Gatekeeper = "opportunistic.fake.it opportunistic.fake.it:9619"
+        User = "cms1515@cms"
+        UserLog = "/data/srv/glidecondor/condor_local/spool/4791/0/cluster464791.proc0.subproc0/job_log"
+        WantCheckpoint = false
+        WantRemoteIO = true
+        WantRemoteSyscalls = false
+        WhenToTransferOutput = "ON_EXIT_OR_EVICT"
+        X509UserProxy = "/data/srv/glidecondor/condor_local/spool/4791/0/cluster464791.proc0.subproc0/d645c39a33feaf70a3b93f6962dd458a2949ab61"
+        x509UserProxyEmail = "tboccali@cern.ch"
+        x509UserProxyExpiration = 1608804557
+        x509UserProxyFirstFQAN = "/cms/Role=NULL/Capability=NULL"
+        x509UserProxyFQAN = "/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=tboccali/CN=447815/CN=Tommaso Boccali,/cms/Role=NULL/Capability=NULL,/cms/itcms/Role=NULL/Capability=NULL"
+        x509userproxysubject = "/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=tboccali/CN=447815/CN=Tommaso Boccali"
+        x509UserProxyVOName = "cms"

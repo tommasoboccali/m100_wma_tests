@@ -6,6 +6,16 @@ cmsenv
 cd -
 python inject-test-wfs.py -u "https://cmsweb-testbed.cern.ch" -m DMWM -f TC_SLC7_Marconi.json -c TB_CMS_Marconi -r TB_CMS_Marconi -t testbed-vocms0263 -a DMWM_Test -p CMS_Marconi_TBv20210429_test -s "T3_IT_Opportunistic_dodas"
 
+NOTA: giusto pare sia
+python inject-test-wfs.py --debug -u "https://cmsweb-testbed.cern.ch" -m DMWM -f TC_SLC7_Marconi.json -c FF_CMS_Marconi -r TB_CMS_Marconi -t testbed-vocms0263 -a DMWM_Test -p CMS_Marconi_TBv20210430_test -s "T1_IT_CNAF"
+
+ATTENZIONE AL CAMBIO DI NOME DEL TEAM
+
+python inject-test-wfs.py --debug -u "https://cmsweb-testbed.cern.ch" -m DMWM -f TC_SLC7_Marconi.json -c FF_CMS_Marconi -r TB_CMS_Marconi -t REPLACE_TEAM_NAME -a DMWM_Test -p CMS_Marconi_TBv20210430_test -s "T1_IT_CNAF"
+
+
+altrimenti non becca il PNN .. stiamo studiando
+
 
 
 per preparare area:
@@ -19,3 +29,16 @@ per preparare area:
         
         
 - io ho un errore su "import future", che risolvo facendo cmsenv
+
+
+links per monitoring:
+- https://cmsweb-testbed.cern.ch/wmstats/index.html (metti Marconi nel primo campo per trovarli)
+- roba tipo https://cmsweb-testbed.cern.ch/reqmgr2/fetch?rid=tboccali_TC_SLC7_Marconi_TB_CMS_Marconi_210430_091349_3205 per vedere il WF e i config
+
+
+
+problema attuale: i classad, anceh se sottomesso con slc7_ppc64le .... contiene
+
+Requirements = (TARGET.Arch == "X86_64") && (TARGET.OpSys == "LINUX") && (TARGET.Disk >= RequestDisk) && (TARGET.Memory >= RequestMemory) && (TARGET.Cpus >= RequestCpus) && (TARGET.HasFileTransfer)
+
+
