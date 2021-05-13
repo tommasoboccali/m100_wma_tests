@@ -1,0 +1,129 @@
+{
+    "assignRequest": {
+        "AcquisitionEra": {
+            "ALCA_2021": "AcquisitionEra-OVERRIDE-ME", 
+            "Digi_2021": "AcquisitionEra-OVERRIDE-ME", 
+            "Reco_2021": "AcquisitionEra-OVERRIDE-ME", 
+            "ZMM_14TeV_TuneCP5_2021_GenSim": "AcquisitionEra-OVERRIDE-ME"
+        }, 
+        "Dashboard": "Dashboard-OVERRIDE-ME", 
+        "GracePeriod": 300, 
+        "MergedLFNBase": "/store/backfill/1", 
+        "Override": {
+            "eos-lfn-prefix": "root://eoscms.cern.ch//eos/cms/store/logs/prod/recent/TESTBED"
+        }, 
+        "ProcessingString": {
+            "ALCA_2021": "ProcessingString-OVERRIDE-ME", 
+            "Digi_2021": "ProcessingString-OVERRIDE-ME", 
+            "Reco_2021": "ProcessingString-OVERRIDE-ME", 
+            "ZMM_14TeV_TuneCP5_2021_GenSim": "ProcessingString-OVERRIDE-ME"
+        }, 
+        "ProcessingVersion": 19, 
+        "SiteBlacklist": [], 
+        "SiteWhitelist": [
+            "SiteWhitelist-OVERRIDE-ME"
+        ], 
+        "SoftTimeout": 129600, 
+        "Team": "Team-OVERRIDE-ME", 
+        "UnmergedLFNBase": "/store/unmerged"
+    }, 
+    "createRequest": {
+        "AcquisitionEra": "DEFAULT_AcqEra", 
+        "CMSSWVersion": "CMSSW_11_2_0", 
+        "Campaign": "Campaign-OVERRIDE-ME", 
+        "Comments": {
+            "CheckList": "", 
+            "WorkFlowDesc": ""
+        }, 
+        "ConfigCacheUrl": "https://cmsweb.cern.ch/couchdb", 
+        "CouchDBName": "reqmgr_config_cache", 
+        "DQMConfigCacheID": "8af38cae6539f9c6049ca0cf23d8e0a1", 
+        "DQMHarvestUnit": "byRun", 
+        "DQMUploadUrl": "https://cmsweb.cern.ch/dqm/relval", 
+        "DbsUrl": "https://cmsweb-testbed.cern.ch/dbs/int/global/DBSReader/", 
+        "EnableHarvesting": true, 
+        "GlobalTag": "112X_mcRun3_2021_realistic_v13", 
+        "IncludeParents": false, 
+        "Memory": 3000, 
+        "Multicore": 1, 
+        "PrepID": "TEST-CMSSW_11_2_0__fullsim_noPU_2021_14TeV-1608392371-ZMM_14", 
+        "ProcessingString": "DEFAULT_ProcStr", 
+        "ProcessingVersion": 1, 
+        "RequestPriority": 600000, 
+        "RequestString": "RequestString-OVERRIDE-ME", 
+        "RequestType": "TaskChain", 
+        "ScramArch": [
+            "slc7_ppc64le_gcc9"
+        ], 
+        "SizePerEvent": 1234, 
+        "SubRequestType": "RelVal", 
+        "Task1": {
+            "AcquisitionEra": "CMSSW_11_2_0", 
+            "Campaign": "CMSSW_11_2_0__fullsim_noPU_2021_14TeV-1608392371", 
+            "ConfigCacheID": "8af38cae6539f9c6049ca0cf23f08b61", 
+            "EventStreams": 0, 
+            "EventsPerJob": 100, 
+            "EventsPerLumi": 100, 
+            "GlobalTag": "112X_mcRun3_2021_realistic_v13", 
+            "KeepOutput": true, 
+            "Memory": 13500, 
+            "Multicore": 8, 
+            "PrimaryDataset": "RelValZMM_14", 
+            "ProcessingString": "Task1_WMCore_TEST", 
+            "RequestNumEvents": 18000, 
+            "Seeding": "AutomaticSeeding", 
+            "SplittingAlgo": "EventBased", 
+            "TaskName": "ZMM_14TeV_TuneCP5_2021_GenSim"
+        }, 
+        "Task2": {
+            "AcquisitionEra": "CMSSW_11_2_0", 
+            "Campaign": "CMSSW_11_2_0__fullsim_noPU_2021_14TeV-1608392371", 
+            "ConfigCacheID": "8af38cae6539f9c6049ca0cf23f093e1", 
+            "EventStreams": 0, 
+            "GlobalTag": "112X_mcRun3_2021_realistic_v13", 
+            "InputFromOutputModule": "FEVTDEBUGoutput", 
+            "InputTask": "ZMM_14TeV_TuneCP5_2021_GenSim", 
+            "KeepOutput": true, 
+            "LumisPerJob": 10, 
+            "Memory": 13500, 
+            "Multicore": 8, 
+            "ProcessingString": "Task2_WMCore_TEST", 
+            "SplittingAlgo": "LumiBased", 
+            "TaskName": "Digi_2021"
+        }, 
+        "Task3": {
+            "AcquisitionEra": "CMSSW_11_2_0", 
+            "Campaign": "CMSSW_11_2_0__fullsim_noPU_2021_14TeV-1608392371", 
+            "ConfigCacheID": "8af38cae6539f9c6049ca0cf23f07e36", 
+            "EventStreams": 0, 
+            "GlobalTag": "112X_mcRun3_2021_realistic_v13", 
+            "InputFromOutputModule": "FEVTDEBUGHLToutput", 
+            "InputTask": "Digi_2021", 
+            "KeepOutput": true, 
+            "LumisPerJob": 10, 
+            "Memory": 13500, 
+            "Multicore": 8, 
+            "ProcessingString": "Task3_WMCore_TEST", 
+            "SplittingAlgo": "LumiBased", 
+            "TaskName": "Reco_2021"
+        }, 
+        "Task4": {
+            "AcquisitionEra": "CMSSW_11_2_0", 
+            "Campaign": "CMSSW_11_2_0__fullsim_noPU_2021_14TeV-1608392371", 
+            "ConfigCacheID": "8af38cae6539f9c6049ca0cf23f096fd", 
+            "EventStreams": 0, 
+            "GlobalTag": "112X_mcRun3_2021_realistic_v13", 
+            "InputFromOutputModule": "RECOSIMoutput", 
+            "InputTask": "Reco_2021", 
+            "KeepOutput": true, 
+            "LumisPerJob": 10, 
+            "Memory": 13500, 
+            "Multicore": 8, 
+            "ProcessingString": "Task4_WMCore_TEST", 
+            "SplittingAlgo": "LumiBased", 
+            "TaskName": "ALCA_2021"
+        }, 
+        "TaskChain": 4, 
+        "TimePerEvent": 10
+    }
+}

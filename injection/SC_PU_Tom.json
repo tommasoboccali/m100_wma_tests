@@ -1,0 +1,180 @@
+{
+    "assignRequest": {
+        "AcquisitionEra": {
+            "HIG_RunIISummer20UL18DIGIPremix_00894_0": "AcquisitionEra-OVERRIDE-ME", 
+            "HIG_RunIISummer20UL18HLT_00894_0": "AcquisitionEra-OVERRIDE-ME", 
+            "HIG_RunIISummer20UL18MiniAOD_00894_0": "AcquisitionEra-OVERRIDE-ME", 
+            "HIG_RunIISummer20UL18RECO_00894_0": "AcquisitionEra-OVERRIDE-ME", 
+            "HIG_RunIISummer20UL18SIM_00894_0": "AcquisitionEra-OVERRIDE-ME", 
+            "HIG_RunIISummer20UL18wmLHEGEN_01011_0": "AcquisitionEra-OVERRIDE-ME"
+        }, 
+        "Dashboard": "Dashboard-OVERRIDE-ME", 
+        "GracePeriod": 300, 
+        "MergedLFNBase": "/store/backfill/1", 
+        "Override": {
+            "eos-lfn-prefix": "root://eoscms.cern.ch//eos/cms/store/logs/prod/recent/TESTBED"
+        }, 
+        "ProcessingString": {
+            "HIG_RunIISummer20UL18DIGIPremix_00894_0": "ProcessingString-OVERRIDE-ME", 
+            "HIG_RunIISummer20UL18HLT_00894_0": "ProcessingString-OVERRIDE-ME", 
+            "HIG_RunIISummer20UL18MiniAOD_00894_0": "ProcessingString-OVERRIDE-ME", 
+            "HIG_RunIISummer20UL18RECO_00894_0": "ProcessingString-OVERRIDE-ME", 
+            "HIG_RunIISummer20UL18SIM_00894_0": "ProcessingString-OVERRIDE-ME", 
+            "HIG_RunIISummer20UL18wmLHEGEN_01011_0": "ProcessingString-OVERRIDE-ME"
+        }, 
+        "ProcessingVersion": 19, 
+        "SiteBlacklist": [], 
+        "SiteWhitelist": [
+            "SiteWhitelist-OVERRIDE-ME"
+        ], 
+        "SoftTimeout": 129600, 
+        "Team": "Team-OVERRIDE-ME", 
+        "UnmergedLFNBase": "/store/unmerged"
+    }, 
+    "createRequest": {
+        "AcquisitionEra": "DEFAULT_AcqEra", 
+        "CMSSWVersion": "CMSSW_10_6_17_patch1", 
+        "Campaign": "Campaign-OVERRIDE-ME", 
+        "ConfigCacheUrl": "https://cmsweb.cern.ch/couchdb", 
+        "CouchDBName": "reqmgr_config_cache", 
+        "DQMUploadUrl": "https://cmsweb.cern.ch/dqm/dev", 
+        "DbsUrl": "https://cmsweb-testbed.cern.ch/dbs/int/global/DBSReader/", 
+        "DeterministicPileup": false, 
+        "EnableHarvesting": false, 
+        "GlobalTag": "106X_upgrade2018_realistic_v11_L1v1", 
+        "IncludeParents": false, 
+        "Memory": 7900, 
+        "Multicore": 4, 
+        "PrepID": "TEST-task_HIG-RunIISummer20UL18wmLHEGEN-01011", 
+        "ProcessingString": "DEFAULT_ProcStr", 
+        "ProcessingVersion": 2, 
+        "RequestPriority": 185000, 
+        "RequestString": "RequestString-OVERRIDE-ME", 
+        "RequestType": "StepChain", 
+        "ScramArch": [
+            "slc7_amd64_gcc700"
+        ], 
+        "SizePerEvent": 2041.5111708917063, 
+        "Step1": {
+            "AcquisitionEra": "RunIISummer20UL18wmLHEGEN", 
+            "CMSSWVersion": "CMSSW_10_6_20_patch1", 
+            "Campaign": "RunIISummer20UL18wmLHEGEN", 
+            "ConfigCacheID": "bef5aa351df0bc1780dbb0ba3a1ecea0", 
+            "EventsPerJob": 4072, 
+            "EventsPerLumi": 2036, 
+            "FilterEfficiency": 0.491, 
+            "GlobalTag": "106X_upgrade2018_realistic_v4", 
+            "KeepOutput": false, 
+            "LheInputFiles": false, 
+            "PrepID": "HIG-RunIISummer20UL18wmLHEGEN-01011", 
+            "PrimaryDataset": "ttHJetToGG_M65_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8", 
+            "ProcessingString": "Step1_WMCore_TEST", 
+            "RequestNumEvents": 800000, 
+            "ScramArch": [
+                "slc7_amd64_gcc700"
+            ], 
+            "Seeding": "AutomaticSeeding", 
+            "SplittingAlgo": "EventBased", 
+            "StepName": "HIG_RunIISummer20UL18wmLHEGEN_01011_0"
+        }, 
+        "Step2": {
+            "AcquisitionEra": "RunIISummer20UL18SIM", 
+            "CMSSWVersion": "CMSSW_10_6_17_patch1", 
+            "Campaign": "RunIISummer20UL18SIM", 
+            "ConfigCacheID": "528bf7046404f48fa330df88a6df1e8f", 
+            "FilterEfficiency": 1, 
+            "GlobalTag": "106X_upgrade2018_realistic_v11_L1v1", 
+            "InputFromOutputModule": "RAWSIMoutput", 
+            "InputStep": "HIG_RunIISummer20UL18wmLHEGEN_01011_0", 
+            "KeepOutput": false, 
+            "PrepID": "HIG-RunIISummer20UL18SIM-00894", 
+            "PrimaryDataset": "ttHJetToGG_M65_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8", 
+            "ProcessingString": "Step2_WMCore_TEST", 
+            "ScramArch": [
+                "slc7_amd64_gcc700"
+            ], 
+            "SplittingAlgo": "EventAwareLumiBased", 
+            "StepName": "HIG_RunIISummer20UL18SIM_00894_0"
+        }, 
+        "Step3": {
+            "AcquisitionEra": "RunIISummer20UL18DIGIPremix", 
+            "CMSSWVersion": "CMSSW_10_6_17_patch1", 
+            "Campaign": "RunIISummer20UL18DIGIPremix", 
+            "ConfigCacheID": "528bf7046404f48fa330df88a6df4ce9", 
+            "FilterEfficiency": 1, 
+            "GlobalTag": "106X_upgrade2018_realistic_v11_L1v1", 
+            "InputFromOutputModule": "RAWSIMoutput", 
+            "InputStep": "HIG_RunIISummer20UL18SIM_00894_0", 
+            "KeepOutput": false, 
+            "MCPileup": "/Neutrino_E-10_gun/RunIISummer20ULPrePremix-UL18_106X_upgrade2018_realistic_v11_L1v1-v2/PREMIX", 
+            "PrepID": "HIG-RunIISummer20UL18DIGIPremix-00894", 
+            "PrimaryDataset": "ttHJetToGG_M65_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8", 
+            "ProcessingString": "Step3_WMCore_TEST", 
+            "ScramArch": [
+                "slc7_amd64_gcc700"
+            ], 
+            "SplittingAlgo": "EventAwareLumiBased", 
+            "StepName": "HIG_RunIISummer20UL18DIGIPremix_00894_0"
+        }, 
+        "Step4": {
+            "AcquisitionEra": "RunIISummer20UL18HLT", 
+            "CMSSWVersion": "CMSSW_10_2_16_UL", 
+            "Campaign": "RunIISummer20UL18HLT", 
+            "ConfigCacheID": "528bf7046404f48fa330df88a6df807f", 
+            "FilterEfficiency": 1, 
+            "GlobalTag": "102X_upgrade2018_realistic_v15", 
+            "InputFromOutputModule": "PREMIXRAWoutput", 
+            "InputStep": "HIG_RunIISummer20UL18DIGIPremix_00894_0", 
+            "KeepOutput": false, 
+            "PrepID": "HIG-RunIISummer20UL18HLT-00894", 
+            "PrimaryDataset": "ttHJetToGG_M65_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8", 
+            "ProcessingString": "Step4_WMCore_TEST", 
+            "ScramArch": [
+                "slc7_amd64_gcc700"
+            ], 
+            "SplittingAlgo": "EventAwareLumiBased", 
+            "StepName": "HIG_RunIISummer20UL18HLT_00894_0"
+        }, 
+        "Step5": {
+            "AcquisitionEra": "RunIISummer20UL18RECO", 
+            "CMSSWVersion": "CMSSW_10_6_17_patch1", 
+            "Campaign": "RunIISummer20UL18RECO", 
+            "ConfigCacheID": "528bf7046404f48fa330df88a6df9e5f", 
+            "FilterEfficiency": 1, 
+            "GlobalTag": "106X_upgrade2018_realistic_v11_L1v1", 
+            "InputFromOutputModule": "RAWSIMoutput", 
+            "InputStep": "HIG_RunIISummer20UL18HLT_00894_0", 
+            "KeepOutput": true, 
+            "PrepID": "HIG-RunIISummer20UL18RECO-00894", 
+            "PrimaryDataset": "ttHJetToGG_M65_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8", 
+            "ProcessingString": "Step5_WMCore_TEST", 
+            "ScramArch": [
+                "slc7_amd64_gcc700"
+            ], 
+            "SplittingAlgo": "EventAwareLumiBased", 
+            "StepName": "HIG_RunIISummer20UL18RECO_00894_0"
+        }, 
+        "Step6": {
+            "AcquisitionEra": "RunIISummer20UL18MiniAOD", 
+            "CMSSWVersion": "CMSSW_10_6_17_patch1", 
+            "Campaign": "RunIISummer20UL18MiniAOD", 
+            "ConfigCacheID": "528bf7046404f48fa330df88a6dfbb30", 
+            "FilterEfficiency": 1, 
+            "GlobalTag": "106X_upgrade2018_realistic_v11_L1v1", 
+            "InputFromOutputModule": "AODSIMoutput", 
+            "InputStep": "HIG_RunIISummer20UL18RECO_00894_0", 
+            "KeepOutput": true, 
+            "PrepID": "HIG-RunIISummer20UL18MiniAOD-00894", 
+            "PrimaryDataset": "ttHJetToGG_M65_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8", 
+            "ProcessingString": "Step6_WMCore_TEST", 
+            "ScramArch": [
+                "slc7_amd64_gcc700"
+            ], 
+            "SplittingAlgo": "EventAwareLumiBased", 
+            "StepName": "HIG_RunIISummer20UL18MiniAOD_00894_0"
+        }, 
+        "StepChain": 6, 
+        "SubRequestType": "ReDigi", 
+        "TimePerEvent": 7.744879646826725
+    }
+}
