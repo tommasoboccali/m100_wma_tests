@@ -1,9 +1,14 @@
 ssh tboccali@lxplus.cern.ch
+
 voms-proxy-init -voms cms
-cd m100_wma_tests/injection/
-cd /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_11_1_0_pre1
+
+cd /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_11_1_8
+
 cmsenv
-cd -
+
+cd
+
+cd m100_wma_tests/injection/
 python inject-test-wfs.py -u "https://cmsweb-testbed.cern.ch" -m DMWM -f TC_SLC7_Marconi.json -c TB_CMS_Marconi -r TB_CMS_Marconi -t testbed-vocms0263 -a DMWM_Test -p CMS_Marconi_TBv20210429_test -s "T3_IT_Opportunistic_dodas"
 
 NOTA: giusto pare sia
