@@ -10,6 +10,9 @@ mkdir -p $WORK_AREA
 module load anaconda
 conda avtivate 
 
+
+export tsocks_ssh_cmd="ssh -N -D 1087 -o TCPKeepAlive=yes -o ServerAliveInterval=60 boccali@lxplus.cern.ch" 
+
 echo ######### STARTING JOB
 
 if [ "$use_tsocks" == 1 ]
