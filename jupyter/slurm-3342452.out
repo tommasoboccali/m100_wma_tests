@@ -1,0 +1,29 @@
+== SLURM SCRIPT starting at Wed Jun 16 18:18:42 CEST 2021
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+/cineca/prod/opt/tools/anaconda/2020.11/none/bin:/cineca/prod/opt/tools/anaconda/2020.11/none/condabin:/m100/home/userexternal/tboccali/perl5/bin:/cineca/bin:/cineca/prod/opt/environment/module/4.7.0/none/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/slurm/current/bin:/opt/slurm/current/sbin:/m100/home/userexternal/tboccali/.local/bin:/m100/home/userexternal/tboccali/bin
+===== STARTING JOB
+===== Starting jupyterhub-singleuser with
+=== JUPYTERHUB_API_TOKEN={thetoken}
+=== JUPYTERHUB_API_URL={theurl}
+=== USERNAME={username}
+=== in the directory /m100_work/INF21_lhc_0/m100_wma_tests/jupyter/{username}
+/var/spool/slurmd/job3342452/slurm_script: line 49: jupyterhub-singleuser: command not found
+== SLURM SCRIPT finishing at Wed Jun 16 18:18:43 CEST 2021 with code 0

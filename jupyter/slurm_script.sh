@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -i
 
 # i cannot set the tsocks from here, I skip
 
