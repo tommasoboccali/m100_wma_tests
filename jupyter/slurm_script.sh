@@ -8,15 +8,20 @@ export WORK_AREA=$WORK/jh_work_area
 mkdir -p $WORK_AREA
 
 module load anaconda
-conda activate testJH
 
+#CONDA_BASE=$(conda info --base)
+eval $(conda shell.bash hook)
+#conda init bash
+
+conda activate testJH
+echo $PATH
 
 export tsocks_ssh_cmd="ssh -N -D 1087 -o TCPKeepAlive=yes -o ServerAliveInterval=60 boccali@lxplus.cern.ch" 
 
-export use_tsocks=1
+export use_tsocks=0
 
 
-echo ######### STARTING JOB
+echo ===== STARTING JOB
 
 if [ "$use_tsocks" == 1 ]
 then
@@ -36,8 +41,12 @@ export USERNAME={username}
 
 mkdir -p $USERNAME
 cd $USERNAME
-
-jupyterhub-singleuser 
+echo ===== Starting jupyterhub-singleuser with
+echo === JUPYTERHUB_API_TOKEN=$JUPYTERHUB_API_TOKEN
+echo === JUPYTERHUB_API_URL=$JUPYTERHUB_API_URL
+echo === USERNAME=$USERNAME
+echo === in the directory `pwd`
+jupyterhub-singleuser
 
 
 echo == SLURM SCRIPT finishing at `date` with code $?

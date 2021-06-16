@@ -1,0 +1,2 @@
+# example: 
+srun -v -N 1 -A INF21_lhc_0 -p m100_usr_prod  -t 400  --gres=gpu:1  --cpus-per-task=32 --ntasks-per-node=1  ./slurm_script.sh
