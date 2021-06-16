@@ -1,0 +1,46 @@
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+manpath: can't set the locale; make sure $LC_* and $LANG are correct
+manpath: warning: $MANPATH set, ignoring /etc/man_db.conf
+== SLURM SCRIPT starting at Wed Jun 16 18:30:53 CEST 2021
+/m100/home/userexternal/tboccali/perl5/bin:/cineca/bin:/m100/home/userexternal/tboccali/.conda/envs/testJH/bin:/cineca/prod/opt/tools/anaconda/2020.11/none/condabin:/m100/home/userexternal/tboccali/perl5/bin:/cineca/bin:/cineca/prod/opt/environment/module/4.7.0/none/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/slurm/current/bin:/opt/slurm/current/sbin:/m100/home/userexternal/tboccali/.local/bin:/m100/home/userexternal/tboccali/bin:/opt/slurm/current/bin:/opt/slurm/current/sbin
+===== STARTING JOB
+===== SETTING FOR SINGULARITY WITH ssh -N -D 1087 -o TCPKeepAlive=yes -o ServerAliveInterval=60 boccali@lxplus.cern.ch
+===== SLEEPING FOR 20 SEC
+Warning: Permanently added the ECDSA host key for IP address '137.138.153.169' to the list of known hosts.
+bind [::1]:1087: Cannot assign requested address
+/m100_work/INF21_lhc_0/m100_wma_tests/jupyter
+===== Starting jupyterhub-singleuser with
+=== JUPYTERHUB_API_TOKEN={thetoken}
+=== JUPYTERHUB_API_URL={theurl}
+=== USERNAME={username}
+=== in the directory /m100_work/INF21_lhc_0/m100_wma_tests/jupyter/{username}
+Traceback (most recent call last):
+  File "/m100/home/userexternal/tboccali/.conda/envs/testJH/bin/jupyterhub-singleuser", line 8, in <module>
+    sys.exit(main())
+  File "/m100/home/userexternal/tboccali/.conda/envs/testJH/lib/python3.9/site-packages/jupyter_core/application.py", line 254, in launch_instance
+    return super(JupyterApp, cls).launch_instance(argv=argv, **kwargs)
+  File "/m100/home/userexternal/tboccali/.conda/envs/testJH/lib/python3.9/site-packages/traitlets/config/application.py", line 844, in launch_instance
+    app.initialize(argv)
+  File "/m100/home/userexternal/tboccali/.conda/envs/testJH/lib/python3.9/site-packages/jupyterhub/singleuser/mixins.py", line 840, in initialize
+    result = super().initialize(*args, **kwargs)
+  File "/m100/home/userexternal/tboccali/.conda/envs/testJH/lib/python3.9/site-packages/jupyterhub/singleuser/mixins.py", line 573, in initialize
+    return super().initialize(argv)
+  File "/m100/home/userexternal/tboccali/.conda/envs/testJH/lib/python3.9/site-packages/traitlets/config/application.py", line 87, in inner
+    return method(app, *args, **kwargs)
+  File "/m100/home/userexternal/tboccali/.conda/envs/testJH/lib/python3.9/site-packages/notebook/notebookapp.py", line 2124, in initialize
+    self.init_webapp()
+  File "/m100/home/userexternal/tboccali/.conda/envs/testJH/lib/python3.9/site-packages/jupyterhub/singleuser/mixins.py", line 610, in init_webapp
+    self.init_hub_auth()
+  File "/m100/home/userexternal/tboccali/.conda/envs/testJH/lib/python3.9/site-packages/jupyterhub/singleuser/mixins.py", line 606, in init_hub_auth
+    raise ValueError("Missing OAuth client ID")
+ValueError: Missing OAuth client ID
+== SLURM SCRIPT finishing at Wed Jun 16 18:31:14 CEST 2021 with code 0
