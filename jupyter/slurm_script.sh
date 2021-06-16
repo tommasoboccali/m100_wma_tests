@@ -8,7 +8,7 @@ export WORK_AREA=$WORK/jh_work_area
 mkdir -p $WORK_AREA
 
 module load anaconda
-conda activate 
+conda activate testJH
 
 
 export tsocks_ssh_cmd="ssh -N -D 1087 -o TCPKeepAlive=yes -o ServerAliveInterval=60 boccali@lxplus.cern.ch" 
