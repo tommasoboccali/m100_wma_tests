@@ -18,7 +18,7 @@ echo $PATH
 
 export tsocks_ssh_cmd="ssh -N -D 1087 -o TCPKeepAlive=yes -o ServerAliveInterval=60 boccali@lxplus.cern.ch" 
 
-export use_tsocks=0
+export use_tsocks=1
 
 
 echo ===== STARTING JOB
