@@ -20,7 +20,7 @@ cd m100_wma_tests/injection/
 python inject-test-wfs.py --debug -u "https://cmsweb-testbed.cern.ch" -m DMWM -f TC_SLC7_Marconi.json -c FF_CMS_Marconi -r TB_CMS_Marconi -t REPLACE_TEAM_NAME -a DMWM_Test -p CMS_Marconi_TBv20210430_test -s "T1_IT_CNAF"
 
 
-### python inject-test-wfs.py --debug -u "https://cmsweb-testbed.cern.ch" -m DMWM -f TC_SLC7_Marconi.json -c FF_CMS_Marconi -r TB_CMS_Marconi -t REPLACE_TEAM_NAME-a DMWM_Test -p CMS_Marconi_TBv20210430_test -s "T1_IT_CNAF"
+### python inject-test-wfs.py --debug -u "https://cmsweb-testbed.cern.ch" -m DMWM -f TC_SLC7_Marconi.json -c FF_CMS_Marconi -r TB_CMS_Marconi -t REPLACE_TEAM_NAME -a DMWM_Test -p CMS_Marconi_TBv20210430_test -s "T1_IT_CNAF"
 
 
 
