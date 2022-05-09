@@ -1,4 +1,10 @@
 
+## NOTA 
+
+I nuovi WRAPPER token based e con supporto a GPU stanno in `NewPilot`
+
+## Vecchia ricetta
+
 qui https://cmsdoc.cern.ch/~spiga/Marconi100/  ci sono due file.
 
 
